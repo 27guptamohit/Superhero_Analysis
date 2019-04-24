@@ -92,7 +92,13 @@ searchfor = ['Incredibles 2', 'Teenage Mutant Ninja Turtles']
 marvel_DC_df = marvel_DC_df[~marvel_DC_df.Title.str.contains('|'.join(searchfor))]
 
 
-print(marvel_DC_df)
+# The two production houses are having contracts with below studio:
+# Marvel = BV, Sony, Fox, Par.
+# DC Comics = WB
+
+marvel_DC_df['Producers'] = np.where(marvel_DC_df['Studio'] == 'WB', 'DC', 'Marvel')
+
+
 
 
 
