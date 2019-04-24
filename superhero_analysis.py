@@ -55,7 +55,6 @@ gross_xpath = "//tr/td[4]/font/b/text()"
 Gross_Income = str(tree.xpath(gross_xpath))
 
 
-
 Gross_Income = Gross_Income.replace('$','').replace(',', '').strip()
 
 
