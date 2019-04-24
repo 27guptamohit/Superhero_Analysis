@@ -55,7 +55,13 @@ for i in list(range(2,52)):
     Superhero.append(tree.xpath(name_url))
 
     source_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()"
-    Source.append(tree.xpath(source_url))
+    if tree.xpath(source_url) != []:
+        Source.append(tree.xpath(source_url))
+    elif "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()" == []:
+        Source.append(tree.xpath("//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()"))
+
+
+
 
 
 print(len(Rank))
