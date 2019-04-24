@@ -32,10 +32,6 @@ boxofficemoio_url = 'https://www.boxofficemojo.com/genres/chart/?id=superhero.ht
 boxoffice_tree = get_earnings(boxofficemoio_url)
 
 def boxoffice_data(boxoffice_tree):
-    Rank = boxoffice_tree.xpath("//tr/td[1]/font/text()")
-    # I am changing the data type of all the below elements of the list to int from xpath element data type.
-
-    Rank = list(map(int, Rank[0:-1]))
 
     Title = boxoffice_tree.xpath("//tr/td[2]/font/a/b/text()")
     Title = list(map(str, Title))
@@ -46,7 +42,7 @@ def boxoffice_data(boxoffice_tree):
     Gross_Income = boxoffice_tree.xpath("//tr/td[4]/font/b/text()")
     Gross_Income = list(map(str, Gross_Income))
 
-    df = pd.DataFrame(list(zip(Rank, Title, Gross_Income, Studio)), columns=['Rank', 'Title', 'Gross Income', 'Studio'])
+    df = pd.DataFrame(list(zip( Title, Gross_Income, Studio)), columns=['Title', 'Gross Income', 'Studio'])
 
     df['Gross Income'] = [x.strip('$') for x in df['Gross Income']]
     df['Gross Income'] = [x.replace(',', '') for x in df['Gross Income']]
@@ -77,6 +73,28 @@ def wiki_data(wiki_tree):
 
 
 wiki_df = wiki_data(wiki_tree)
+
+
+# Now I am merging the two data frames to filter the DC and Marvel only movies
+
+marvel_DC_df = boxoffice_df.merge(wiki_df, on="Title")
+
+# As "Incredibles 2" and "Teenage Mutant Ninja Turtles" are not from DC and Marvel, we need to omit them from the results.
+
+
+
+# I learnt the below code from the below link. It stores the string that we do not want in our dataframe and
+# then it removes the whole row where it finds the given string.
+# https://stackoverflow.com/questions/28679930/how-to-drop-rows-from-pandas-data-frame-that-contains-a-particular-string-in-a-p
+# Comment number 14
+
+searchfor = ['Incredibles 2', 'Teenage Mutant Ninja Turtles']
+marvel_DC_df = marvel_DC_df[~marvel_DC_df.Title.str.contains('|'.join(searchfor))]
+
+
+print(marvel_DC_df)
+
+
 
 
 
