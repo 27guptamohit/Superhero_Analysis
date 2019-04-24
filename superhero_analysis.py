@@ -77,7 +77,7 @@ wiki_df = wiki_data(wiki_tree)
 
 # Now I am merging the two data frames to filter the DC and Marvel only movies
 
-marvel_DC_df = boxoffice_df.merge(wiki_df, on="Title")
+marvel_DC_earnings_df = boxoffice_df.merge(wiki_df, on="Title")
 
 # As "Incredibles 2" and "Teenage Mutant Ninja Turtles" are not from DC and Marvel, we need to omit them from the results.
 
@@ -89,14 +89,69 @@ marvel_DC_df = boxoffice_df.merge(wiki_df, on="Title")
 # Comment number 14
 
 searchfor = ['Incredibles 2', 'Teenage Mutant Ninja Turtles']
-marvel_DC_df = marvel_DC_df[~marvel_DC_df.Title.str.contains('|'.join(searchfor))]
+marvel_DC_earnings_df = marvel_DC_earnings_df[~marvel_DC_earnings_df.Title.str.contains('|'.join(searchfor))]
 
 
 # The two production houses are having contracts with below studio:
 # Marvel = BV, Sony, Fox, Par.
 # DC Comics = WB
 
-marvel_DC_df['Producers'] = np.where(marvel_DC_df['Studio'] == 'WB', 'DC', 'Marvel')
+marvel_DC_earnings_df['Producers'] = np.where(marvel_DC_earnings_df['Studio'] == 'WB', 'DC', 'Marvel')
+
+
+
+
+
+
+def fivethirtyeight_df(fte_file: str, publisher: str):
+
+    dc_fte = pd.read_csv(fte_file,
+                         usecols=['name', 'ID', 'ALIGN', 'EYE', 'HAIR', 'SEX', 'ALIVE', 'APPEARANCES'])
+
+    # I learnt below regex code to extract what ever is in bracket from below link
+    # https://stackoverflow.com/questions/16842001/copy-text-between-parentheses-in-pandas-dataframe-column-into-another-column
+
+    dc_fte['Real Name'] = dc_fte['name'].str.extract('.*\((.*)\).*')
+
+    # https://stackoverflow.com/questions/20894525/how-to-remove-parentheses-and-all-data-within-using-pandas-python
+
+    dc_fte['name'] = dc_fte['name'].str.replace(r"\(.*\)", "")
+
+    dc_fte['Publisher'] = publisher
+
+    dc_fte['ID'] = dc_fte['ID'].str.rstrip('Identity')
+
+    dc_fte['ALIGN'] = dc_fte['ALIGN'].str.rstrip('Characters')
+
+    dc_fte['EYE'] = dc_fte['EYE'].str.rstrip('Eyes')
+
+    dc_fte['HAIR'] = dc_fte['HAIR'].str.rstrip('Hair')
+
+    dc_fte['SEX'] = dc_fte['SEX'].str.rstrip('Characters')
+
+    dc_fte['ALIVE'] = dc_fte['ALIVE'].str.rstrip('Characters')
+
+    dc_fte.rename(columns={'name': 'Superhero Name',
+                           'ID': 'Identity',
+                           'ALIGN': 'Alignment',
+                           'EYE': 'Eye Color',
+                           'HAIR': 'Hair Color',
+                           'SEX': 'Gender',
+                           'ALIVE': 'Alive',
+                           'APPEARANCES': 'Appearances'}, inplace=True)
+
+    return dc_fte
+
+
+
+dc_marvel_fte1 = fivethirtyeight_df('1fte.csv', 'DC')
+
+dc_marvel_fte2 = fivethirtyeight_df('2fte.csv', 'Marvel')
+
+dc_marvel_fte_df = pd.concat([dc_marvel_fte1, dc_marvel_fte2])
+
+
+
 
 
 
