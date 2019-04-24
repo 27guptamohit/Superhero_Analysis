@@ -2,15 +2,14 @@ import requests
 import lxml.html
 import pandas as pd
 from time import sleep
+import numpy as np
 
 
 
 def get_earnings() -> lxml.etree:
 
 
-
-
-    url = 'https://en.wikipedia.org/wiki/List_of_highest-grossing_superhero_films'
+    url = 'https://www.boxofficemojo.com/genres/chart/?id=superhero.htm'
 
 
     # Fetching the url web page, and converting the response into an HTML document tree:
@@ -26,67 +25,41 @@ def get_earnings() -> lxml.etree:
             sleep(5)
     return tree
 
+
+
+
+
 tree = get_earnings()
 
-Rank = []
-Film = []
-Worldwide_Gross = []
-Year = []
-Superhero = []
-Source = []
-
-for i in list(range(2,52)):
-
-    rank_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[1]/text()"
-    Rank.append(tree.xpath(rank_url))
-
-    film_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[2]/i/a/text()"
-    Film.append(tree.xpath(film_url))
 
 
-    gross_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[3]/text()"
-    Worldwide_Gross.append(tree.xpath(gross_url))
+rank_xpath = "//tr/td[1]/font/text()"
 
-    year_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[4]/text()"
-    Year.append(tree.xpath(year_url))
-
-
-    name_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[5]/a/text()"
-    Superhero.append(tree.xpath(name_url))
-
-    source_url = "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()"
-    if tree.xpath(source_url) != []:
-        Source.append(tree.xpath(source_url))
-    elif "//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()" == []:
-        Source.append(tree.xpath("//*[@id='mw-content-text']/div/table[1]/tbody[1]/tr["+ str(i) + "]/td[6]/a/text()"))
+Rank = (tree.xpath(rank_xpath))
+Rank = Rank[0:-1]
 
 
 
+title_xpath = "//tr/td[2]/font/a/b/text()"
+
+Title = str(tree.xpath(title_xpath))
 
 
-print(len(Rank))
+studio_xpath = "//tr/td[3]/font/a/text()"
+Studio = tree.xpath(studio_xpath)
+Studio = str(Studio[1:101])
 
-print(Rank[0:5])
 
-print(len(Film))
 
-print(Film[0:5])
+gross_xpath = "//tr/td[4]/font/b/text()"
+Gross_Income = str(tree.xpath(gross_xpath))
 
-print(len(Worldwide_Gross))
 
-print(Worldwide_Gross[0:5])
 
-print(len(Year))
+Gross_Income = Gross_Income.replace('$','').replace(',', '').strip()
 
-print(Year[0:5])
 
-print(len(Superhero))
 
-print(Superhero[0:5])
-
-print(len(Source))
-
-print(Source[0:5])
 
 
 
