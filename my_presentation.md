@@ -56,13 +56,21 @@ I had to webscrape data from two websites to get the earnings data of top 50 sup
 <p class="fragment">Wikipedia</p>
 <p class="fragment">Boxofficemojo</p>
 
+
+
 **Data Preparation:**
 
 Preparing of the dataframes was the most important part of the whole project. Correct superhero datasets were required to be merged together in order to get the actual result. 
 
+
+
 **Data Analysis:**
 
 Final data analysis was performed on the prepared datasets to find the answers to couple of questions asked while proposing the project.
+
+---
+
+<!-- .slide: data-background="fte.png" -->
 
 ---
 
