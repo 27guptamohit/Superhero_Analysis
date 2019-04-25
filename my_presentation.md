@@ -69,11 +69,35 @@ Preparing of the dataframes was the most important part of the whole project. Co
 Final data analysis was performed on the prepared datasets to find the answers to couple of questions asked while proposing the project.
 
 ---
+# Table1:
 
 <!-- .slide: data-background="fte.png" data-background-size="1000px"-->
 
 ---
 
+<!-- .slide: data-background="big.png" data-background-size="1000px"-->
+
+---
+
+<!-- .slide: data-background="earnings.png" data-background-size="1000px"-->
+
+---
+
+<!-- .slide: data-background="dcEye.png" data-background-size="1000px"-->
+
+---
+
+<!-- .slide: data-background="marvelEye.png" data-background-size="1000px"-->
+
+---
+
+<!-- .slide: data-background="dchair.png" data-background-size="1000px"-->
+
+---
+
+<!-- .slide: data-background="marvelHair.png" data-background-size="1000px"-->
+
+---
 # Future work
 
 More questions are being surveyed from different people to answer their curiosity about their favorite superhero and publisher.
