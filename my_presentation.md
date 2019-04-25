@@ -70,7 +70,7 @@ Final data analysis was performed on the prepared datasets to find the answers t
 
 ---
 
-<!-- .slide: data-background="fte.png" -->
+<!-- .slide: data-background="fte.png" data-background-size="1000px"-->
 
 ---
 
