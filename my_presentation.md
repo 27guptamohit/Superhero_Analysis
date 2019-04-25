@@ -1,16 +1,18 @@
 
 # University of Illinois, Urbana-Champaign
 **Programming for Analytics and Data Processing**
-**Superhero Analysis**
+**Final Project**
 
 
-<p class="fragment">Hello.  This is a fragment.</p>
+<p class="fragment">Superhero Analysis</p>
 
 ---
 
-OK, what now?
+<!-- .slide: data-background-iframe="https://www.youtube.com/embed/HtWuOYiKZKA" data-background-interactive -->
+---
+# Introduction
 
-<div id="vis"></div>
+DC also abreviated as Detective Comics
 
 ---
 
@@ -29,7 +31,3 @@ Hello, is my alert here yet?
 <!-- .slide: data-background-color="#999999" -->
 
 hi there
-
----
-
-<!-- .slide: data-background-iframe="https://www.youtube.com/embed/adzYW5DZoWs" data-background-interactive -->
