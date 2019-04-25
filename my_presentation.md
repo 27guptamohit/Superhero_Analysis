@@ -7,7 +7,7 @@
 
 Final Project
 
-<p class="fragment" style = "fade">Superhero Analysis</p>
+<p class="fragment">Superhero Analysis</p>
 
 **Mohit Gupta**
 
@@ -20,10 +20,9 @@ Final Project
 # Introduction
 
 
+<p class="fragment">Marvel and DC are the most famous and prominent names for publishing superhero based movies and related media imprints. The fans have argued since decades about the superiority of characters from each of the comic house and which production house is better. Is it DC Comics or Marvels? </p>
 
-<p class="fade">Marvel and DC are the most famous and prominent names for publishing superhero based movies and related media imprints. The fans have argued since decades about the superiority of characters from each of the comic house and which production house is better. Is it DC Comics or Marvels? </p>
-
-<p class="slide">The project is all about finding who is the best and helping the little ones in the previous video to find who is the better!</p>
+<p class="fragment">The project is all about finding who is the best and helping the little ones in the previous video to find who is the better!</p>
 
 ---
 
@@ -31,9 +30,9 @@ Final Project
 
 I have assumed the below hypothesis to conduct the analysis:
 
-<p class="concave">1. Captain America and Iron Man are the most powerful duos in the superhero leagues from all the production houses.</p>
-<p class="convex">2. Marvel is not popular than DC Comics</p>
-<p class="zoom">3. Non-human superheros are not popular as compared to non-human superheros.</p>
+<p class="fragment">1. Captain America and Iron Man are the most powerful duos in the superhero leagues from all the production houses.</p>
+<p class="fragment">2. Marvel is not popular than DC Comics</p>
+<p class="fragment">3. Non-human superheros are not popular as compared to non-human superheros.</p>
 
 ---
 
