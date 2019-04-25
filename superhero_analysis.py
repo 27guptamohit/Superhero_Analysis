@@ -96,7 +96,7 @@ marvel_DC_earnings_df = marvel_DC_earnings_df[~marvel_DC_earnings_df.Title.str.c
 # Marvel = BV, Sony, Fox, Par.
 # DC Comics = WB
 
-marvel_DC_earnings_df['Producers'] = np.where(marvel_DC_earnings_df['Studio'] == 'WB', 'DC', 'Marvel')
+marvel_DC_earnings_df['Publisher'] = np.where(marvel_DC_earnings_df['Studio'] == 'WB', 'DC Comics', 'Marvel Comics')
 
 
 
@@ -118,6 +118,10 @@ def fivethirtyeight_df(fte_file: str, publisher: str):
     dc_fte['name'] = dc_fte['name'].str.replace(r"\(.*\)", "")
 
     dc_fte['Publisher'] = publisher
+
+    # I have learnt to use the rstrip from the comment 3 of below link:
+    # https://stackoverflow.com/questions/51778480/remove-certain-string-from-entire-column-in-pandas-dataframe
+
 
     dc_fte['ID'] = dc_fte['ID'].str.rstrip('Identity')
 
@@ -150,6 +154,24 @@ dc_marvel_fte2 = fivethirtyeight_df('2fte.csv', 'Marvel')
 
 dc_marvel_fte_df = pd.concat([dc_marvel_fte1, dc_marvel_fte2])
 
+
+def marvel_big_data(a:str = "1c.csv", b:str = "2c.csv"):
+    df1 = pd.read_csv(a,
+                      usecols=['Name', 'Intelligence', 'Strength', 'Speed',
+                               'Durability', 'Power', 'Combat', 'Total'])
+
+    df2 = pd.read_csv(b,
+                      usecols=['ID', 'Name', 'Alignment', 'Gender', 'Race',
+                               'Publisher', 'Height', 'Weight'])
+
+    df3 = pd.merge(df1, df2, on='Name', how='inner')
+
+    df3['Alignment'] = df3['Alignment'].str.title()
+
+    return df3
+
+
+marvel_big_data_df = marvel_big_data()
 
 
 
