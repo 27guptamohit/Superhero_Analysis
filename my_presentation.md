@@ -69,7 +69,10 @@ Preparing of the dataframes was the most important part of the whole project. Co
 Final data analysis was performed on the prepared datasets to find the answers to couple of questions asked while proposing the project.
 
 ---
-# Table1:
+
+# Result
+
+---
 
 <!-- .slide: data-background="fte.png" data-background-size="1000px"-->
 
@@ -83,19 +86,27 @@ Final data analysis was performed on the prepared datasets to find the answers t
 
 ---
 
-<!-- .slide: data-background="dcEye.png" data-background-size="1000px"-->
+<!-- .slide: data-background="dcEye.png" data-background-size="700px"-->
 
 ---
 
-<!-- .slide: data-background="marvelEye.png" data-background-size="1000px"-->
+<!-- .slide: data-background="marvelEye.png" data-background-size="700px"-->
 
 ---
 
-<!-- .slide: data-background="dchair.png" data-background-size="1000px"-->
+<!-- .slide: data-background="dchair.png" data-background-size="700px"-->
 
 ---
 
-<!-- .slide: data-background="marvelHair.png" data-background-size="1000px"-->
+<!-- .slide: data-background="marvelHair.png" data-background-size="700px"-->
+
+---
+
+# Conclusion
+
+Marvel and DC both prefers superheros with Blue Eyes and Black Hairs.
+
+So, if a movie or a comic includes a character with Blue Eyes and Black Hairs, it is more likely that those stats are popular amongst public.
 
 ---
 # Future work
