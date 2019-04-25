@@ -1,3 +1,12 @@
+
+
+output:
+  revealjs::revealjs_presentation:
+    theme: sky
+    highlight: pygments
+    center: true
+
+---
 # Hi there!
 
 Trial PR slide
