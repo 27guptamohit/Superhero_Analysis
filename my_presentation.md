@@ -31,7 +31,9 @@ Final Project
 I have assumed the below hypothesis to conduct the analysis:
 
 <p class="fragment">1. Captain America and Iron Man are the most powerful duos in the superhero leagues from all the production houses.</p>
+
 <p class="fragment">2. Marvel is not popular than DC Comics</p>
+
 <p class="fragment">3. Non-human superheros are not popular as compared to non-human superheros.</p>
 
 ---
@@ -54,8 +56,6 @@ I had to webscrape data from two websites to get the earnings data of top 50 sup
 <p class="fragment">Wikipedia</p>
 <p class="fragment">Boxofficemojo</p>
 
----
-
 **Data Preparation:**
 
 Preparing of the dataframes was the most important part of the whole project. Correct superhero datasets were required to be merged together in order to get the actual result. 
@@ -68,5 +68,5 @@ Final data analysis was performed on the prepared datasets to find the answers t
 
 # Future work
 
-More questions are being surveyed from different people to know what they are curious to know about their favorite superhero and publisher.
+More questions are being surveyed from different people to answer their curiosity about their favorite superhero and publisher.
 
