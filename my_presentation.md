@@ -1,10 +1,8 @@
 
-## Hi there!
+# University of Illinois, Urbana-Champaign
+**Programming for Analytics and Data Processing**
+**Superhero Analysis**
 
-Trial PR slide
-See?
-
-**This is the presentation!**
 
 <p class="fragment">Hello.  This is a fragment.</p>
 
