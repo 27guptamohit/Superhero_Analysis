@@ -34,7 +34,7 @@ I have assumed the below hypothesis to conduct the analysis:
 
 <p class="fragment">2. Marvel is not popular than DC Comics</p>
 
-<p class="fragment">3. Non-human superheros are not popular as compared to non-human superheros.</p>
+<p class="fragment">3. Human superheros are not popular as compared to non-human superheros.</p>
 
 ---
 
