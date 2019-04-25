@@ -7,7 +7,7 @@
 
 Final Project
 
-<p class="fragment">Superhero Analysis</p>
+<p class="fragment" style = "fade">Superhero Analysis</p>
 
 **Mohit Gupta**
 
