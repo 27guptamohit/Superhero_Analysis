@@ -9,10 +9,6 @@
 ---
 
 <!-- .slide: data-background-iframe="https://www.youtube.com/embed/HtWuOYiKZKA" data-background-interactive -->
----
-# Introduction
-
-DC also abreviated as Detective Comics
 
 ---
 
