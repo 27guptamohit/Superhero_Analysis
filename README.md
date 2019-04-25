@@ -1,4 +1,10 @@
-# Final_Project
-IS590PR Spring 2019. Top-level repository for student project forks
+# Example vega-lite repository
 
-The detailed instructions for the Final Projects will be in the course Moodle.
+This is an example of how to deploy a vega-lite visualization to github pages directly.
+
+It uses CDNs for delivering the javascript, and builds on these libraries:
+
+ * [vega-lite](https://vega.github.io/vega-lite/)
+ * [less.js](http://lesscss.org/)
+
+We will add more as the semester continues.
