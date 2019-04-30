@@ -1,3 +1,5 @@
+
+
 import requests
 import lxml.html
 import pandas as pd
@@ -127,7 +129,7 @@ wiki_df = wiki_data(wiki_tree)
 
 # Now I am merging the two data frames to filter the DC and Marvel only movies
 
-marvel_DC_earnings_df = boxoffice_df.merge(wiki_df, on="Title")
+earnings_df = boxoffice_df.merge(wiki_df, on="Title")
 
 # As "Incredibles 2" and "Teenage Mutant Ninja Turtles" are not from DC and Marvel, we need to omit them from the results.
 # I learnt the below code from the below link. It stores the string that we do not want in our dataframe and
@@ -136,14 +138,14 @@ marvel_DC_earnings_df = boxoffice_df.merge(wiki_df, on="Title")
 # Comment number 14
 
 searchfor = ['Incredibles 2', 'Teenage Mutant Ninja Turtles']
-marvel_DC_earnings_df = marvel_DC_earnings_df[~marvel_DC_earnings_df.Title.str.contains('|'.join(searchfor))]
+earnings_df = earnings_df[~earnings_df.Title.str.contains('|'.join(searchfor))]
 
 
 # The two production houses are having contracts with below studio:
 # Marvel = BV, Sony, Fox, Par.
 # DC Comics = WB
 
-marvel_DC_earnings_df['Publisher'] = np.where(marvel_DC_earnings_df['Studio'] == 'WB', 'DC Comics', 'Marvel Comics')
+earnings_df['Publisher'] = np.where(earnings_df['Studio'] == 'WB', 'DC Comics', 'Marvel Comics')
 
 
 #====================================================================================
@@ -183,6 +185,7 @@ def fivethirtyeight_df(fte_file: str, publisher: str):
     # I have learnt to use the rstrip from the comment 3 of below link:
     # https://stackoverflow.com/questions/51778480/remove-certain-string-from-entire-column-in-pandas-dataframe
 
+    dc_fte['name'] = dc_fte['name'].str.strip()
 
     dc_fte['ID'] = dc_fte['ID'].str.rstrip('Identity')
 
@@ -205,19 +208,23 @@ def fivethirtyeight_df(fte_file: str, publisher: str):
                            'ALIVE': 'Alive',
                            'APPEARANCES': 'Appearances'}, inplace=True)
 
+
     return dc_fte
 
 
 
-dc_marvel_fte1 = fivethirtyeight_df('1fte.csv', 'DC')
+dc_marvel_fte1 = fivethirtyeight_df('1fte.csv', 'DC Comics')
 
-dc_marvel_fte2 = fivethirtyeight_df('2fte.csv', 'Marvel')
+dc_marvel_fte2 = fivethirtyeight_df('2fte.csv', 'Marvel Comics')
 
 
 # Concating the two dataframes obtained on the basis of column names.
 
 
-dc_marvel_fte_df = pd.concat([dc_marvel_fte1, dc_marvel_fte2])
+comics_df = pd.concat([dc_marvel_fte1, dc_marvel_fte2])
+
+comics_df.drop_duplicates(subset ="Superhero Name",
+                          keep = "first", inplace = True)
 
 
 #=====================================================================================
@@ -231,7 +238,7 @@ def marvel_big_data(a:str = "1c.csv", b:str = "2c.csv"):
     :return: It returns the merged data frame
 
     >>> marvel_big_data_df = marvel_big_data()
-    >>> print(type(marvel_big_data_df))
+    >>> print(type(stats_df))
     <class 'pandas.core.frame.DataFrame'>
 
     """
@@ -246,24 +253,44 @@ def marvel_big_data(a:str = "1c.csv", b:str = "2c.csv"):
 
     df3 = pd.merge(df1, df2, on='Name', how='inner')
 
+    df3['Name'] = df3['Name'].str.strip()
+    df3['Race'] = np.where(df3['Race'] == 'Human', 'Human', 'Mutant')
+
     df3.rename(columns = {'Name': 'Superhero Name'}, inplace=True)
+
+    # Filtering the rows which have the DC and Marvel as publishers
     df3 =  df3[(df3['Publisher']  == "Marvel Comics")|(df3['Publisher']  == "DC Comics") ]
+
+    # Now droping the publishers column
+    df3.drop(['Publisher'], axis=1)
 
 
     return df3
 
 
-marvel_big_data_df = marvel_big_data()
-
-#==============================================================
+stats_df = marvel_big_data()
 
 
+stats_df.drop_duplicates(subset ="Superhero Name",
+                         keep = "first", inplace = True)
 
-dc_marvel_fte_df.to_csv("fte.csv")
 
-marvel_big_data_df.to_csv("big.csv")
+#=============================================================
 
-marvel_DC_earnings_df.to_csv("earnings.csv")
+
+# Below, the validate parameter in the merge function validates the many to many relationship in more than one entries are present
+# in both the tables.
+
+final_merged_df = pd.merge(stats_df, comics_df, on=['Superhero Name'], how='inner', validate='m:m')
+
+#=============================================================
+
+
+
+
+
+
+
 
 
 
