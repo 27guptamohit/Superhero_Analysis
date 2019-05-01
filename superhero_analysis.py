@@ -5,6 +5,7 @@ import lxml.html
 import pandas as pd
 from time import sleep
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 
@@ -262,8 +263,8 @@ def marvel_big_data(a:str = "1c.csv", b:str = "2c.csv"):
     df3 =  df3[(df3['Publisher']  == "Marvel Comics")|(df3['Publisher']  == "DC Comics") ]
 
     # Now droping the publishers column
-    df3.drop(['Publisher'], axis=1)
 
+    df3.drop(['Publisher'], axis=1, inplace=True)
 
     return df3
 
@@ -282,10 +283,64 @@ stats_df.drop_duplicates(subset ="Superhero Name",
 # in both the tables.
 
 final_merged_df = pd.merge(stats_df, comics_df, on=['Superhero Name'], how='inner', validate='m:m')
-
 #=============================================================
 
+# Answering the questions and hypothesis that I stated in the project proposal.
 
+# Que 1.
+
+# 1.a) Find six pairs of two characters who appeared most in comics(3 pairs Marvel + 3 Pairs DC)
+# 1.b) Compare their combined power levels and check who wins.
+
+
+que1 = final_merged_df.sort_values(['Publisher', 'Appearances'], ascending=[True, False])
+
+
+# I extracted the characters with most comic appearances from both the Publishers.
+
+que1a = que1.groupby('Publisher').head(6).reset_index(drop=True, inplace=False)
+
+print(que1a)
+
+
+# I will now make pairs with their combined power levels.
+# I will pair them in the order of first and last from same publisher.
+# For eg.
+# Rank 1 with Rank 6, (DC)
+# Rank 2 with Rank 5, (DC)
+# Rank 3 with Rank 4, (DC)
+# Rank 7 with Rank 12, (Marvel)
+# Rank 8 with Rank 11, (Marvel)
+# Rank 9 with Rank 10, (Marvel)
+
+
+dc_dict = {}
+
+for i in [0,6]:
+    for j, k in zip(list(range(0,3)),list(range(5, 0, -2))):
+        Name1 = que1a['Superhero Name'][i+j]
+        Name2 = que1a['Superhero Name'][i+j+k]
+        Name = Name1 + ' & ' + Name2 + ' ( ' + que1a['Publisher'][i+j] + ' )'
+
+        Total1 = que1a['Total'][i+j]
+        Total2 = que1a['Total'][i + j+k]
+        Total = Total1 + Total2
+
+        dc_dict[Name] = Total
+
+
+
+
+ans1 = pd.DataFrame(dc_dict.items(), columns=['Name', 'Combined Power']).sort_values(['Combined Power'], ascending=[False])
+
+
+print("The most powerful random pairs on the basis: \n\n1. Six characters from each publisher with most comic apperances\n2. Selecting first and last ranked character to form pair\n\n", ans1)
+
+
+print("\n\nAlso, the combined power of Captain America and Iron Man:",  que1a['Total'][7] + que1a['Total'][9] )
+
+
+#=================================================================
 
 
 
