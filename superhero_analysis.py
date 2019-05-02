@@ -1,8 +1,38 @@
+# Mohit Gupta, Superhero Analysis
+# University of Illinois, Urbana-Champaign
+# NetID: mohitg2
+# Programming for Analytics & Data Processing
+# Spring 2019
+
+# IMP:
 # If you run this program for more than two many times, google will stop accepting your request and will mark your server as spam.
-# This is because, I am sending lot's of requests on google's server for the solution of que2.
 # Avoid running this program multiple times.
 # More details can be found in this link:
 # https://tools.ietf.org/html/rfc6585#page-3
+
+
+
+# Please read the (Final Report.md) which contains the final conclusion of the project and whether the proposed hypothesis were true or not.
+# Apart from the questions I proposed, my friends, co-workers and classmates(from IS 590 PR) were curious to know
+# about few more details. So I am adding the questions they asked.
+
+
+# Requirements of the project fulfilled :
+
+#  1. Increased level of sophistication for Type II analysis
+#  2. Linked 2+ datasets from distinct sources
+#  3. Tested proposed hypothesis
+#  4. Prior approval taken from instructor for project topic
+#  5. Modified code on the basis of constructive feedback received from peers on "Presentation Day"
+#  6. Included doctests and unit-tests with more than 85 % code coverage
+#  7. All nine functions includes docstrings
+#  8. Functions run with different input parameters without hard-coded vales (check def names_url() which generates output)
+#     for the function (def get_tree()) as it's input.
+#  9. Hypothesis testing & Conclusion mentioned in ( README.md )
+# 10. Report from this program uploaded on Github (Superhero Report.txt)
+# 11. Total lines of code: 600+
+
+
 
 
 import requests
@@ -297,14 +327,13 @@ final_merged_df = pd.merge(stats_df, comics_df, on=['Superhero Name'], how='inne
 # 1.b) Compare their combined power levels and check who wins.
 
 
-que1 = final_merged_df.sort_values(['Publisher', 'Appearances'], ascending=[True, False])
+
+sorted1 = final_merged_df.sort_values(['Publisher', 'Appearances'], ascending=[True, False])
 
 
 # I extracted the characters with most comic appearances from both the Publishers.
 
-que1a = que1.groupby('Publisher').head(6).reset_index(drop=True, inplace=False)
-
-print(que1a)
+ans1a = sorted1.groupby('Publisher').head(6).reset_index(drop=True, inplace=False)
 
 
 # I will now make pairs with their combined power levels.
@@ -322,12 +351,12 @@ dc_dict = {}
 
 for i in [0,6]:
     for j, k in zip(list(range(0,3)),list(range(5, 0, -2))):
-        Name1 = que1a['Superhero Name'][i+j]
-        Name2 = que1a['Superhero Name'][i+j+k]
-        Name = Name1 + ' & ' + Name2 + ' ( ' + que1a['Publisher'][i+j] + ' )'
+        Name1 = ans1a['Superhero Name'][i+j]
+        Name2 = ans1a['Superhero Name'][i+j+k]
+        Name = Name1 + ' & ' + Name2 + ' ( ' + ans1a['Publisher'][i+j] + ' )'
 
-        Total1 = que1a['Total'][i+j]
-        Total2 = que1a['Total'][i + j+k]
+        Total1 = ans1a['Total'][i+j]
+        Total2 = ans1a['Total'][i + j+k]
         Total = Total1 + Total2
 
         dc_dict[Name] = Total
@@ -335,20 +364,100 @@ for i in [0,6]:
 
 
 
-ans1 = pd.DataFrame(dc_dict.items(), columns=['Name', 'Combined Power']).sort_values(['Combined Power'], ascending=[False])
-
-
-print("The most powerful random pairs on the basis: \n\n1. Six characters from each publisher with most comic apperances\n2. Selecting first and last ranked character to form pair\n\n", ans1)
-
-
-print("\n\nAlso, the combined power of Captain America and Iron Man:",  que1a['Total'][7] + que1a['Total'][9])
+ans1b = pd.DataFrame(dc_dict.items(), columns=['Name', 'Combined Power']).sort_values(['Combined Power'], ascending=[False])
 
 
 
-#=================================================================
+#================================
 
 
-# Que2 How many movie appearances does the characters with most comic appearances have?
+
+# Que 2. Marvel is not popular than DC Comics
+
+
+# To answer this question, I have to perform several analysis.
+# a. I will group the top 5 movies from Marvel and DC and check publishing house earned more.
+# b. I will group all the movies from respective publishing house and
+#    then check the total amount earned by both the publishing houses.
+
+
+que2 = earnings_df.sort_values(['Publisher', 'Gross Income'], ascending=[True, False])
+
+ans2a = que2.groupby('Publisher').head(5).reset_index(drop=True, inplace=False)
+ans2a = ans2a.groupby('Publisher')['Gross Income'].sum()
+
+
+
+ans2b = que2.groupby('Publisher')['Gross Income'].sum()
+
+
+
+
+#==================================================
+
+# Que 3. Are non-human superheros not more popular as compared to mutant superheros.
+
+
+# a. I will find the count of number of human and mutant superheros for both the publishers.
+# b. I will find the count of number of human and mutant superheros no matter who was their publisher.
+
+
+ans3a = final_merged_df.groupby('Race').size()
+
+ans3b = final_merged_df.groupby(['Publisher', 'Race']).size()
+
+
+#==================================================
+
+
+# Que 4. Finding the statistics of characters with different hair color, eye color, height and weight:
+
+
+ans4 = comics_df.groupby(['Publisher', 'Eye Color','Hair Color']).size().nlargest(5)
+
+
+
+
+
+
+
+
+#===========================================
+
+# Que 5. Superheros with what hair color and eye color are more prone to live and die?
+
+
+
+ans5 =  comics_df.groupby(['Alive', 'Eye Color', 'Hair Color']).size().nlargest(10)
+
+
+
+#===========================================
+
+
+# Que 6. What their race has to do with their Intelligence, Strength, Speed, Durability, Power, Combat, Total ?
+
+
+ans6 = final_merged_df.groupby(['Publisher','Race'])['Intelligence','Strength', 'Speed','Durability' ,'Power' , 'Combat' ,'Total'].median()
+
+
+#===============================================
+
+# Que 7. How are height and weight distributed for characters in different publishing house?
+
+ans7a = final_merged_df.groupby(['Publisher','Race'])['Height'].median()
+
+
+
+
+ans7b = final_merged_df.groupby(['Publisher','Race'])['Weight'].median()
+
+#================================================
+
+
+# Trying to attempt complicated webscrapping:
+
+# Que8 How many movie appearances does the characters with most comic appearances have?
 
 # As, I do not have the movie appearances data readily, I had to perform a detailed web-scrapping again.
 
@@ -357,7 +466,7 @@ print("\n\nAlso, the combined power of Captain America and Iron Man:",  que1a['T
 # First finding top four names of superheros from each production house with most comic appearances.
 
 
-que2_names = list(que1.groupby('Publisher').head(4).reset_index(drop=True, inplace=False)['Superhero Name'])
+que2_names = list(sorted1.groupby('Publisher').head(4).reset_index(drop=True, inplace=False)['Superhero Name'])
 
 def names_url(que2_names):
     """
@@ -420,7 +529,7 @@ names_etree_data = []
 for i in names_url_list:
     names_etree_data.append(get_tree(i))
 
-
+# I had to manually find the xpath of all the urls as the wikipedia tables were poorly designed.
 
 xpath_sup = ["//tr[9]/td/div/ul/li//span/text()", "//tr[7]/td/div/ul/li/text()","//tr[9]/td/text()","//tr[6]/td/i/a/text()","//tr[10]/td/text()","//tr[8]/td/text()","//tr[6]/td/div/ul/li/text()","//tr[6]/td/i/a/text()"]
 
@@ -433,79 +542,71 @@ for i,j,k in zip(que2_names,names_etree_data, xpath_sup):
 
 
 
-ans2 = pd.DataFrame(movie_count_dict.items(), columns=['Name', 'Total Movie Appearances']).sort_values(['Total Movie Appearances'], ascending=[False])
-
-
-print(ans2)
+ans8 = pd.DataFrame(movie_count_dict.items(), columns=['Name', 'Total Movie Appearances']).sort_values(['Total Movie Appearances'], ascending=[False])
 
 
 
 
 
-#================================
+#================================================
 
 
+with open("Superhero Report.txt", 'w') as file:
 
-# Que 3. Marvel is not popular than DC Comics
+    print('\nSuperhero Analysis Report\n\n', file=file)
 
+    # As ans1a was not printing all the rows, I used ans1a.to_string() function to print all the rows.
+    # I learnt it from the below link (Comment 383):
+    # https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
 
-# To answer this question, I have to perform several analysis.
-# a. I will group the top 5 movies from Marvel and DC and check publishing house earned more.
-# b. I will group all the movies from respective publishing house and
-#    then check the total amount earned by both the publishing houses.
+    print('\n1. Top six each superhero rankings from both the publishers on the basis of comic appearances: \n\n', ans1a.to_string(index = False), file=file)
 
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-que3 = earnings_df.sort_values(['Publisher', 'Gross Income'], ascending=[True, False])
+    print(
+        "\n\n2. The most powerful random pairs on the basis: \n\na. Six characters from each publisher with most comic apperances\nb. Selecting first and last ranked character to form pair\n\n",
+        ans1b.to_string(index=False), file=file)
 
-ans3a = que3.groupby('Publisher').head(5).reset_index(drop=True, inplace=False)
-ans3a = ans3a.groupby('Publisher')['Gross Income'].sum()
-
-
-
-ans3b = que3.groupby('Publisher')['Gross Income'].sum()
-
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
 
+    print("\n\n3. Also, the combined power of Captain America and Iron Man:\t", ans1a['Total'][7] + ans1a['Total'][9], file=file)
 
-print("\n\nSum of earnings from top five movies of both the publishing house:\n", ans3a)
-
-print("\n\nSum of earnings from all movies of both the publishing house:\n", ans3b)
-
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
 
-#==================================================
+    print("\n\n4. Sum of earnings from top five movies of both the publishing house:\n\n", ans2a, file=file)
 
-# Que 4. Are non-human superheros not more popular as compared to mutant superheros.
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
+    print("\n\n5. Sum of earnings from all movies of both the publishing house:\n\n", ans2b, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-# a. I will find the count of number of human and mutant superheros for both the publishers.
-# b. I will find the count of number of human and mutant superheros no matter who was their publisher.
+    print('\n\n6. Total number of Humans and Mutants in the final dataframe:\n\n', ans3a, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
+    print('\n\n7. Total number of Humans and Mutants in different publishing house:\n\n', ans3b, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-ans4a = final_merged_df.groupby('Race').size()
+    print("\n\n8. Count of characters having particular Eye Color and Hair Color combination:\n\n", ans4, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-ans4b = final_merged_df.groupby(['Publisher', 'Race']).size()
+    print("\n\n9. Count of Superheros based on Hair Color and Eye Color who are Living and Deceased(Dead):\n\n", ans5, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
+    print("\n\n10. Median of physical attributes of superheros on the basis of their Race:\n\n", ans6, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
+    print("\n\n11. Characters with most common Weight(kgs) amongst different publishers and race:\n\n", ans7a, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-print('\n\nTotal number of Humans and Mutants in the final dataframe:\n',ans4a)
+    print("\n\n12. Characters with most common Height(cms) amongst different publishers and race:\n\n", ans7b, file=file)
+    print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-print('\n\nTotal number of Humans and Mutants in different publishing house:\n',ans4b)
-
-
-
-#==================================================
-
-
-# Que 5. Finding the statistics of characters with different hair color, eye color, height and weight:
-
-
-ans5 = comics_df.groupby(['Publisher', 'Eye Color','Hair Color']).size()
-
-
-print(ans5)
-
-
-
+    print('\n\n12b. Total movie appearances of characters with most comic appearances:\n\n',
+          ans8.to_string(index=False), file=file)
+    print(
+        '\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------',
+        file=file)
 
 
