@@ -6,6 +6,22 @@
 ### Programming for Analytics & Data Processing (IS 590 PR)
 
 ======
+
+# Requirements of the project fulfilled :
+
+1. Increased level of sophistication for Type II analysis
+2. Linked 2+ datasets from distinct sources
+3. Tested proposed hypothesis
+4. Prior approval taken from instructor for project topic
+5. Modified code on the basis of constructive feedback received from peers on "Presentation Day"
+6. Included doctests and unit-tests with more than 85 % code coverage
+7. All nine functions includes docstrings
+8. Functions run with different input parameters without hard-coded vales (check def names_url() which generates output) for the function (def get_tree()) as it's input.
+9. Hypothesis testing & Conclusion mentioned in ( README.md )
+10. Report from this program uploaded on Github (Superhero Report.txt)
+11. Total lines of code: 600+
+
+======
 ## Introduction
 
 Marvel and DC are the most famous and prominent names for publishing superhero based movies and related media imprints. The fans have argued since decades about the superiority of characters from each of the comic house and which production house is better. Is it DC Comics or Marvels? 
@@ -203,7 +219,11 @@ Result: True
 ### Reason: As there are more superhero movies with mutant superheros produced based on answer 6 and answer 7, I can conclude that Human superheros are definitely not popular as compared to non-human(mutant) superheros.
 
 
+======
 
+# Final Words:
+
+From the analysis, I can say that Marvel Comics is definitely better than DC Comics.
 
 
 
