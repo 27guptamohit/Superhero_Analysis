@@ -172,8 +172,35 @@ Que 8. How many movie appearances does the characters with most comic appearance
 
 ======
 
+Conclusion:
+
+Hypothesis 1: Captain America and Iron Man are the most powerful duos in the superhero leagues from all the production houses.
+
+Result: Rejected
+
+### Reason: Superman & Alan Scott (Green Lantern) are better pairs (Combined Power 965 v/s 811)
 
 
+Hypothesis 2: Earnings of superhero movies are not affected by the eye color, height, weight and hair color of superheros.
+
+Result: Rejected
+
+### Reason: There are more characters with Blue eyes, Black and Brown hairs. Thus, greater number signifies popularity which should affect movies earnings based on superhero's attractiveness.
+
+
+
+
+Hypothesis 3: Marvel is not popular than DC Comics.
+
+Result: Rejected
+
+### Reason: In terms of earnings of top five movies or all the movies from both the production houses, Marvel clearly beats DC Comics.
+
+Hypothesis 4: Human superheros are not popular as compared to non-human superheros.
+
+Result: True
+
+### Reason: As there are more superhero movies with mutant superheros produced based on answer 6 and answer 7, I can conclude that Human superheros are definitely not popular as compared to non-human(mutant) superheros.
 
 
 
