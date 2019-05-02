@@ -3,7 +3,7 @@ Superhero Analysis Report
 
 
 
-1. Top six each superhero rankings from both the publishers on the basis of comic appearances: 
+1. Top 12 superheros (6+6) from both the publishers on the basis of comic appearances: 
 
      Superhero Name  Intelligence  Strength  Speed  Durability  Power  Combat  Total    Race  Height  Weight Identity Alignment Eye Color Hair Color   Gender      Alive  Appearances                Real Name      Publisher
             Batman           100        18     27          42     37     100    324   Human   188.0    95.0  Secret      Good      Blue      Black     Male     Living        3093.0              Bruce Wayne      DC Comics
@@ -24,7 +24,7 @@ Superhero Analysis Report
 
 2. The most powerful random pairs on the basis: 
 
-a. Six characters from each publisher with most comic apperances
+a. Six characters from each publisher with most comic appearances.
 b. Selecting first and last ranked character to form pair
 
                                       Name  Combined Power
@@ -130,7 +130,7 @@ Marvel Comics Human           63.0      19.0   33.0  ...   40.0    60.0  284.0
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-11. Characters with most common Weight(kgs) amongst different publishers and race:
+11. Characters with most common Height(kgs) amongst different publishers and race:
 
  Publisher      Race  
 DC Comics      Human     185.0
@@ -142,7 +142,7 @@ Name: Height, dtype: float64
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-12. Characters with most common Height(cms) amongst different publishers and race:
+12. Characters with most common Weight(kgs) amongst different publishers and race:
 
  Publisher      Race  
 DC Comics      Human     86.0

@@ -559,12 +559,12 @@ with open("Superhero Report.txt", 'w') as file:
     # I learnt it from the below link (Comment 383):
     # https://stackoverflow.com/questions/19124601/pretty-print-an-entire-pandas-series-dataframe
 
-    print('\n1. Top six each superhero rankings from both the publishers on the basis of comic appearances: \n\n', ans1a.to_string(index = False), file=file)
+    print('\n1. Top 12 superheros (6+6) from both the publishers on the basis of comic appearances: \n\n', ans1a.to_string(index = False), file=file)
 
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
     print(
-        "\n\n2. The most powerful random pairs on the basis: \n\na. Six characters from each publisher with most comic apperances\nb. Selecting first and last ranked character to form pair\n\n",
+        "\n\n2. The most powerful random pairs on the basis: \n\na. Six characters from each publisher with most comic appearances.\nb. Selecting first and last ranked character to form pair\n\n",
         ans1b.to_string(index=False), file=file)
 
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
@@ -594,13 +594,13 @@ with open("Superhero Report.txt", 'w') as file:
     print("\n\n9. Count of Superheros based on Hair Color and Eye Color who are Living and Deceased(Dead):\n\n", ans5, file=file)
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-    print("\n\n10. Median of physical attributes of superheros on the basis of their Race:\n\n", ans6, file=file)
+    print("\n\n10. Median of physical attributes of superheros on the basis of their Race:\n\n", ans6.to_string(), file=file)
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-    print("\n\n11. Characters with most common Weight(kgs) amongst different publishers and race:\n\n", ans7a, file=file)
+    print("\n\n11. Characters with most common Height(cms) amongst different publishers and race:\n\n", ans7a, file=file)
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
-    print("\n\n12. Characters with most common Height(cms) amongst different publishers and race:\n\n", ans7b, file=file)
+    print("\n\n12. Characters with most common Weight(kgs) amongst different publishers and race:\n\n", ans7b, file=file)
     print('\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', file=file)
 
     print('\n\n12b. Total movie appearances of characters with most comic appearances:\n\n',
