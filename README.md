@@ -52,6 +52,7 @@ Top 12 superheros (6+6) from both the publishers on the basis of comic appearanc
 |   Jean Grey     |Marvel Comics|  1107.0      |
 
 1.a) Find six pairs of two characters who appeared most in comics(3 pairs Marvel + 3 Pairs DC)
+
 1.b) Compare their combined power levels and check who wins.
 
 | Superhero Pair Name  | Publisher   | Combined Power  |
@@ -68,16 +69,66 @@ Top 12 superheros (6+6) from both the publishers on the basis of comic appearanc
 
 
 Que 2. 
+
 2.a) I will group the top 5 movies from Marvel and DC and check publishing house earned more.
+
+| Publisher  | Earnings(Top 5 movies)($)  |
+|:---:|:---:|
+| Marvel Comics  |  $ 2,673,994,705 |
+|  DC Comics | $ 2,061,358,541  |
+
+
 2.b) I will group all the movies from respective publishing house and then check the total amount earned by both the publishing houses.
 
+| Publisher  | Earnings(Top 5 movies)($)  |
+|:---:|:---:|
+| Marvel Comics  |  $ 10,096,393,849 |
+|  DC Comics | $ 3,357,798,524  |
+
 Que 3. Are non-human superheros not more popular as compared to mutant superheros.
-3.a) I will find the count of number of human and mutant superheros for both the publishers.
-3.b) I will find the count of number of human and mutant superheros no matter who was their publisher.
+3.a) The count of number of human and mutant superheros for both the publishers.
+
+| Publisher  | Race   | Combined Power  |
+|:---------------:|:-----------:|:------------:|
+|         DC Comics        |  Human  |       13 |
+|          | Mutant   |      50  |
+|       Marvel Comics |  Human  |       25 |
+|      |  Mutant  |       107 |
+
+3.b) The count of number of human and mutant superheros no matter who was their publisher.
+
+Total number of Humans and Mutants in the final dataframe:
+
+| Race  | Count  |
+|:---:|:---:|
+| Human  |  38 |
+|  Mutant | 157 |
 
 Que 4. Find the statistics of characters with different hair color, eye color, height and weight.
 
+| Publisher  | Eye Color   | Hair Color  |Count|
+|:---------------:|:-----------:|:------------:|:-----:|
+|   Marvel Comics        |  Brown  |       Black |775|
+|Superman         |    |      Brown  |621|
+|  Wonder Woman   |  Blue  |       Blond |599|
+|  DC Comics        |  Brown  |       Black |429|
+|   Marvel Comics     |  Blue  |  Black      |361|
+
 Que 5. Superheros with what hair color and eye color are more prone to live and die?
+
+| Alive  | Eye Color   | Hair Color  |Count|
+|:---------------:|:-----------:|:------------:|:-----:|
+|   Living        |  Brown  |       Black |932|
+|         |  Blue  |      Blond  |689|
+|     |  Brown  |       Brown |673|
+|     |  Blue  |       Black |431|
+|      |    |  Black      |361|
+|           |    |       Brown |309|
+|      Deceased     |  Brown  |       Brown |273|
+|           |  Brown  |       Black |272|
+|           |  Blue  |       Blond |241|
+|           |  Blue  |       Black |183|
+
 
 Que 6. What their race has to do with their Intelligence, Strength, Speed, Durability, Power, Combat, Total ?
 
