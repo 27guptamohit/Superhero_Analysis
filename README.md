@@ -37,8 +37,9 @@ Que 1.
 1.b) Compare their combined power levels and check who wins.
 
 Top 12 superheros (6+6) from both the publishers on the basis of comic appearances:
+
 | Superhero Name  | Publisher   | Appearances  |
-|-----------------|-------------|--------------|
+|:---------------:|:-----------:|:------------:|
 |   Batman        |  DC Comics  |       3093.0 |
 |Superman         | DC Comics   |      2496.0  |
 |  Wonder Woman   |  DC Comics  |       1231.0 |
