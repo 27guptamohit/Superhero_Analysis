@@ -37,20 +37,20 @@ Que 1.
 1.b) Compare their combined power levels and check who wins.
 
 Top 12 superheros (6+6) from both the publishers on the basis of comic appearances:
-| Superhero Name  | Publisher  | Appearances  |
-|---|---|---|
-|   Batman|  DC Comics |  3093.0 |
-|Superman   | DC Comics  | 2496.0  |
-|  Wonder Woman |  DC Comics |  1231.0 |
-|  Aquaman |  DC Comics |  1121.0 |
-|  Alan Scott(Green Lantern) |  DC Comics |  969.0 |
-|Alfred Pennyworth(Batman's Butler)   | DC Comics  | 930.0  |
-|   Spider-Man| Marvel Comics  | 4043.0  |
-|   Captain America|  Marvel Comics  | 3360.0  |
-| Wolverine  | Marvel Comics   |  3061.0 |
-|  Iron Man |  Marvel Comics  |  2961.0 |
-|  Hulk |  Marvel Comics |  2017.0  |
-|   Jean Grey| Marvel Comics   |  1107.0 |
+| Superhero Name  | Publisher   | Appearances  |
+|-----------------|-------------|--------------|
+|   Batman        |  DC Comics  |       3093.0 |
+|Superman         | DC Comics   |      2496.0  |
+|  Wonder Woman   |  DC Comics  |       1231.0 |
+|  Aquaman        |  DC Comics  |       1121.0 |
+|  Alan Scott     |  DC Comics  |  969.0       |
+|Alfred Pennyworth| DC Comics   | 930.0        |
+|   Spider-Man    |Marvel Comics| 4043.0       |
+|  Captain America|Marvel Comics| 3360.0       |
+| Wolverine       |Marvel Comics|       3061.0 |
+|  Iron Man       |Marvel Comics|       2961.0 |
+|  Hulk           |Marvel Comics|      2017.0  |
+|   Jean Grey     |Marvel Comics|  1107.0      |
 
 Que 2. 
 2.a) I will group the top 5 movies from Marvel and DC and check publishing house earned more.
