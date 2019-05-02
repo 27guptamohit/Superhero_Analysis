@@ -33,7 +33,6 @@ I have assumed the below hypothesis to conduct the analysis:
 # Questions & Answers after analysis:
 
 Que 1.
-1.b) Compare their combined power levels and check who wins.
 
 Top 12 superheros (6+6) from both the publishers on the basis of comic appearances:
 
@@ -53,16 +52,19 @@ Top 12 superheros (6+6) from both the publishers on the basis of comic appearanc
 |   Jean Grey     |Marvel Comics|  1107.0      |
 
 1.a) Find six pairs of two characters who appeared most in comics(3 pairs Marvel + 3 Pairs DC)
+1.b) Compare their combined power levels and check who wins.
 
-| Superhero Pair Name  | Publisher   | Appearances  |
+| Superhero Pair Name  | Publisher   | Combined Power  |
 |:---------------:|:-----------:|:------------:|
-|   Batman        |  DC Comics  |       3093.0 |
-|Superman         | DC Comics   |      2496.0  |
-|  Wonder Woman   |  DC Comics  |       1231.0 |
-|  Aquaman        |  DC Comics  |       1121.0 |
-|  Alan Scott     |  DC Comics  |  969.0       |
-|Alfred Pennyworth| DC Comics   | 930.0        |
-|   Spider-Man    |Marvel Comics| 4043.0       |
+|         Superman & Alan Scott        |  DC Comics  |       965 |
+| Spider-Man & Jean Grey          | Marvel Comics   |      937  |
+|       Wonder Woman & Aquaman |  DC Comics  |       898 |
+|    Wolverine & Iron Man  |  Marvel Comics  |       861 |
+|   Captain America & Hulk |  Marvel Comics  |  780       |
+|Batman & Alfred Pennyworth | DC Comics   | 486        |
+
+
+### Also, the combined power of Captain America and Iron Man:	 811
 
 
 Que 2. 
