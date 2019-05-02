@@ -33,7 +33,6 @@ I have assumed the below hypothesis to conduct the analysis:
 # Questions & Answers after analysis:
 
 Que 1.
-1.a) Find six pairs of two characters who appeared most in comics(3 pairs Marvel + 3 Pairs DC)
 1.b) Compare their combined power levels and check who wins.
 
 Top 12 superheros (6+6) from both the publishers on the basis of comic appearances:
@@ -52,6 +51,19 @@ Top 12 superheros (6+6) from both the publishers on the basis of comic appearanc
 |  Iron Man       |Marvel Comics|       2961.0 |
 |  Hulk           |Marvel Comics|      2017.0  |
 |   Jean Grey     |Marvel Comics|  1107.0      |
+
+1.a) Find six pairs of two characters who appeared most in comics(3 pairs Marvel + 3 Pairs DC)
+
+| Superhero Pair Name  | Publisher   | Appearances  |
+|:---------------:|:-----------:|:------------:|
+|   Batman        |  DC Comics  |       3093.0 |
+|Superman         | DC Comics   |      2496.0  |
+|  Wonder Woman   |  DC Comics  |       1231.0 |
+|  Aquaman        |  DC Comics  |       1121.0 |
+|  Alan Scott     |  DC Comics  |  969.0       |
+|Alfred Pennyworth| DC Comics   | 930.0        |
+|   Spider-Man    |Marvel Comics| 4043.0       |
+
 
 Que 2. 
 2.a) I will group the top 5 movies from Marvel and DC and check publishing house earned more.
