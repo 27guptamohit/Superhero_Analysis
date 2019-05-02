@@ -109,7 +109,7 @@ Que 4. Find the statistics of characters with different hair color, eye color, h
 | Publisher  | Eye Color   | Hair Color  |Count|
 |:---------------:|:-----------:|:------------:|:-----:|
 |   Marvel Comics        |  Brown  |       Black |775|
-|Superman         |    |      Brown  |621|
+|Superman         |  Brown  |      Brown  |621|
 |  Wonder Woman   |  Blue  |       Blond |599|
 |  DC Comics        |  Brown  |       Black |429|
 |   Marvel Comics     |  Blue  |  Black      |361|
@@ -122,21 +122,58 @@ Que 5. Superheros with what hair color and eye color are more prone to live and 
 |         |  Blue  |      Blond  |689|
 |     |  Brown  |       Brown |673|
 |     |  Blue  |       Black |431|
-|      |    |  Black      |361|
-|           |    |       Brown |309|
+|      |  Blue  |  Black      |361|
+|           |  Blue  |       Brown |309|
 |      Deceased     |  Brown  |       Brown |273|
 |           |  Brown  |       Black |272|
 |           |  Blue  |       Blond |241|
 |           |  Blue  |       Black |183|
 
 
-Que 6. What their race has to do with their Intelligence, Strength, Speed, Durability, Power, Combat, Total ?
+Que 6. What their race has to do with their Intelligence, Strength, Speed, Total ?
+
+|  Publisher |  Race  |  Intelligence | Strength  |  Speed | Total(Including Rest)  |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|  DC Comics |   Human | 63  | 12  | 27  | 217  |
+|   |Mutant   | 63  | 62  | 35  | 365  |
+|  Marvel Comice | Human  |  63 |  19 |  33 | 284  |
+|   |  Mutant |  63 | 28  |  27 |  298 |
+
 
 Que 7. How are height and weight distributed for characters in different publishing house?
 
+| Publisher  | Race   | Median Height(cms)  |
+|:---------------:|:-----------:|:------------:|
+|         DC Comics        |  Human  |       185.0 |
+|          | Mutant   |      180.0  |
+|       Marvel Comics |  Human  |       183.0 |
+|      |  Mutant  |       183.0 |
+
+
+| Publisher  | Race   | Median Weight(kgs)  |
+|:---------------:|:-----------:|:------------:|
+|         DC Comics        |  Human  |       86.0 |
+|          | Mutant   |      79.0  |
+|       Marvel Comics |  Human  |       83.0 |
+|      |  Mutant  |       81.0 |
+
 Que 8. How many movie appearances does the characters with most comic appearances have?
 
+|  Superhero Name |Total Movie Appearances   |
+|:---:|:---:|
+|  Batman | 16  |
+|  Spider-Man | 16  |
+|  Super-Man | 13  |
+|  Captain America |  9 |
+|  Wonder Woman | 6  |
+|  Aquaman | 4  |
+|  Iron Man | 4  |
+|  Wolverine | 3  |
+
 ======
+
+
+
 
 
 
