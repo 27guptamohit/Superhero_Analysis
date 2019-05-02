@@ -1,0 +1,169 @@
+
+Superhero Analysis Report
+
+
+
+1. Top six each superhero rankings from both the publishers on the basis of comic appearances: 
+
+     Superhero Name  Intelligence  Strength  Speed  Durability  Power  Combat  Total    Race  Height  Weight Identity Alignment Eye Color Hair Color   Gender      Alive  Appearances                Real Name      Publisher
+            Batman           100        18     27          42     37     100    324   Human   188.0    95.0  Secret      Good      Blue      Black     Male     Living        3093.0              Bruce Wayne      DC Comics
+          Superman           100       100    100         100     94      85    579  Mutant   191.0   101.0  Secret      Good      Blue      Black     Male     Living        2496.0               Clark Kent      DC Comics
+      Wonder Woman            88       100     50         100     42     100    480  Mutant   183.0    74.0  Public      Good      Blue      Black   Female     Living        1231.0             Diana Prince      DC Comics
+           Aquaman            63        80     50          80     65      80    418  Mutant   185.0   146.0  Public      Good      Blue      Blond     Male     Living        1121.0             Arthur Curry      DC Comics
+        Alan Scott            63        80     23          90     98      32    386  Mutant   180.0    90.0  Secret      Good      Blue      Blond     Male   Deceased         969.0                New Earth      DC Comics
+ Alfred Pennyworth            63        10     17          10      7      55    162   Human   178.0    72.0  Public      Good      Blue      Black     Male     Living         930.0                New Earth      DC Comics
+        Spider-Man            88        55     60          74     58      85    420   Human   178.0    74.0  Secret      Good     Hazel      Brown     Male     Living        4043.0             Peter Parker  Marvel Comics
+   Captain America            63        19     35          56     46     100    319   Human   188.0   108.0  Public      Good      Blue      White     Male     Living        3360.0            Steven Rogers  Marvel Comics
+         Wolverine            55        32     38         100     44     100    369  Mutant   160.0   135.0  Public   Neutral      Blue      Black     Male     Living        3061.0  James \"Logan\" Howlett  Marvel Comics
+          Iron Man           100        85     58          85    100      64    492   Human   198.0   191.0  Public      Good      Blue      Black     Male     Living        2961.0   Anthony \"Tony\" Stark  Marvel Comics
+              Hulk            88       100     47         100     41      85    461  Mutant   244.0   630.0  Public      Good     Brown      Brown     Male     Living        2017.0      Robert Bruce Banner  Marvel Comics
+         Jean Grey           100        80     67         100    100      70    517  Mutant   168.0    52.0  Public      Good     Green        Red   Female   Deceased        1107.0                Earth-616  Marvel Comics
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. The most powerful random pairs on the basis: 
+
+a. Six characters from each publisher with most comic apperances
+b. Selecting first and last ranked character to form pair
+
+                                      Name  Combined Power
+      Superman & Alan Scott ( DC Comics )             965
+ Spider-Man & Jean Grey ( Marvel Comics )             937
+     Wonder Woman & Aquaman ( DC Comics )             898
+   Wolverine & Iron Man ( Marvel Comics )             861
+ Captain America & Hulk ( Marvel Comics )             780
+ Batman & Alfred Pennyworth ( DC Comics )             486
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Also, the combined power of Captain America and Iron Man:	 811
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Sum of earnings from top five movies of both the publishing house:
+
+ Publisher
+DC Comics        2061358541
+Marvel Comics    2673994705
+Name: Gross Income, dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5. Sum of earnings from all movies of both the publishing house:
+
+ Publisher
+DC Comics         3357798524
+Marvel Comics    10096393849
+Name: Gross Income, dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6. Total number of Humans and Mutants in the final dataframe:
+
+ Race
+Human      38
+Mutant    157
+dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+7. Total number of Humans and Mutants in different publishing house:
+
+ Publisher      Race  
+DC Comics      Human      13
+               Mutant     50
+Marvel Comics  Human      25
+               Mutant    107
+dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8. Count of characters having particular Eye Color and Hair Color combination:
+
+ Publisher      Eye Color  Hair Color
+Marvel Comics  Brown      Black         775
+                          Brown         621
+               Blue       Blond         599
+DC Comics      Brown      Black         429
+Marvel Comics  Blue       Black         361
+dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+9. Count of Superheros based on Hair Color and Eye Color who are Living and Deceased(Dead):
+
+ Alive      Eye Color  Hair Color
+Living     Brown      Black         932
+           Blue       Blond         689
+           Brown      Brown         673
+           Blue       Black         431
+                      Brown         309
+           Black      Black         301
+Deceased   Brown      Brown         273
+                      Black         272
+           Blue       Blond         241
+                      Black         183
+dtype: int64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+10. Median of physical attributes of superheros on the basis of their Race:
+
+                       Intelligence  Strength  Speed  ...  Power  Combat  Total
+Publisher     Race                                   ...                      
+DC Comics     Human           63.0      12.0   27.0  ...   26.0    80.0  271.0
+              Mutant          63.0      62.5   35.0  ...   65.0    67.5  365.0
+Marvel Comics Human           63.0      19.0   33.0  ...   40.0    60.0  284.0
+              Mutant          63.0      28.0   27.0  ...   59.0    60.0  298.0
+
+[4 rows x 7 columns]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+11. Characters with most common Weight(kgs) amongst different publishers and race:
+
+ Publisher      Race  
+DC Comics      Human     185.0
+               Mutant    180.0
+Marvel Comics  Human     183.0
+               Mutant    183.0
+Name: Height, dtype: float64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+12. Characters with most common Height(cms) amongst different publishers and race:
+
+ Publisher      Race  
+DC Comics      Human     86.0
+               Mutant    79.0
+Marvel Comics  Human     83.0
+               Mutant    81.0
+Name: Weight, dtype: float64
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+12b. Total movie appearances of characters with most comic appearances:
+
+             Name  Total Movie Appearances
+          Batman                       16
+      Spider-Man                       16
+        Superman                       13
+ Captain America                        9
+    Wonder Woman                        6
+         Aquaman                        4
+        Iron Man                        4
+       Wolverine                        3
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

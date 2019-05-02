@@ -1,7 +1,7 @@
 # Mohit Gupta, Superhero Analysis
 # University of Illinois, Urbana-Champaign
 # NetID: mohitg2
-# Programming for Analytics & Data Processing
+# Programming for Analytics & Data Processing (IS 590 PR)
 # Spring 2019
 
 # IMP:
