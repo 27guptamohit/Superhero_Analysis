@@ -1,3 +1,8 @@
+# If you run this program for more than two many times, google will stop accepting your request and will mark your server as spam.
+# This is because, I am sending lot's of requests on google's server for the solution of que2.
+# Avoid running this program multiple times.
+# More details can be found in this link:
+# https://tools.ietf.org/html/rfc6585#page-3
 
 
 import requests
@@ -5,18 +10,17 @@ import lxml.html
 import pandas as pd
 from time import sleep
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 
-def get_earnings(url) -> lxml.etree:
+def get_tree(url) -> lxml.etree:
     """
     The function is used to import the input url parameter to convert it into a  html document tree.
     :param url: The url of the webpage that I want to convert into HTML document tree.
     :return: The object returned is an lxml etree
 
     >>> boxofficemoio_url = 'https://www.boxofficemojo.com/genres/chart/?id=superhero.htm'
-    >>> type(get_earnings(boxofficemoio_url))
+    >>> type(get_tree(boxofficemoio_url))
     The request was successful
     <class 'lxml.html.HtmlElement'>
 
@@ -41,12 +45,12 @@ def get_earnings(url) -> lxml.etree:
 
 boxofficemoio_url = 'https://www.boxofficemojo.com/genres/chart/?id=superhero.htm'
 
-boxoffice_tree = get_earnings(boxofficemoio_url)
+boxoffice_tree = get_tree(boxofficemoio_url)
 
 
 wiki_url = 'https://en.wikipedia.org/wiki/List_of_highest-grossing_superhero_films'
 
-wiki_tree = get_earnings(wiki_url)
+wiki_tree = get_tree(wiki_url)
 
 #=================================================
 
@@ -337,33 +341,169 @@ ans1 = pd.DataFrame(dc_dict.items(), columns=['Name', 'Combined Power']).sort_va
 print("The most powerful random pairs on the basis: \n\n1. Six characters from each publisher with most comic apperances\n2. Selecting first and last ranked character to form pair\n\n", ans1)
 
 
-print("\n\nAlso, the combined power of Captain America and Iron Man:",  que1a['Total'][7] + que1a['Total'][9] )
+print("\n\nAlso, the combined power of Captain America and Iron Man:",  que1a['Total'][7] + que1a['Total'][9])
+
 
 
 #=================================================================
 
 
+# Que2 How many movie appearances does the characters with most comic appearances have?
+
+# As, I do not have the movie appearances data readily, I had to perform a detailed web-scrapping again.
+
+
+
+# First finding top four names of superheros from each production house with most comic appearances.
+
+
+que2_names = list(que1.groupby('Publisher').head(4).reset_index(drop=True, inplace=False)['Superhero Name'])
+
+def names_url(que2_names):
+    """
+    This function specifically searches google for the link of wikipedia which has details of superhero's movie appearances.
+    A lot of factors went into consideration while designing this function.
+    I had to manually design the search query "Superhero name" + " appearances in other media"
+    as this is the only query which was returning me the link of wikipedia which mentions the list of movies the superhero
+    appeared in.
+
+
+    (Source)I learnt the below code to return link from search results from the below link:
+    https://www.geeksforgeeks.org/performing-google-search-using-python-code/
+
+
+    :param que2_names: List of superheros from Marvel and DC.
+    :return: List of links which contains the superhero movie data.
+    """
+    names1_url = []
+
+    for i in que2_names:
+        try:
+            from googlesearch import search
+        except ImportError:
+            print("No module named 'google' found")
+
+        # to search
+        query = i + " appearances in other media"
+
+        for j in search(query, num=1, stop=1, pause=2):
+            names1_url.append(str(j))
+
+    return names1_url
+
+
+names_url_list = names_url(que2_names)
+
+
+
+
+def etree_data(etree, xpaths):
+    """
+    I will take the etree as the first parameter and input the xpath for the that wiki page as second parameter
+
+    :param etree: Etree element for the referenced superhero
+    :param xpaths: xpath of the desired data for specific superhero
+    :return: count of number of movies by that superhero
+    """
+
+    movie_details = etree.xpath(xpaths)
+    movie_details = list(map(str, movie_details))
+
+
+    return len(movie_details)
+
+
+
+
+names_etree_data = []
+
+for i in names_url_list:
+    names_etree_data.append(get_tree(i))
+
+
+
+xpath_sup = ["//tr[9]/td/div/ul/li//span/text()", "//tr[7]/td/div/ul/li/text()","//tr[9]/td/text()","//tr[6]/td/i/a/text()","//tr[10]/td/text()","//tr[8]/td/text()","//tr[6]/td/div/ul/li/text()","//tr[6]/td/i/a/text()"]
+
+
+movie_count_dict = {}
+
+for i,j,k in zip(que2_names,names_etree_data, xpath_sup):
+    movie_count_dict[i] = etree_data(j, k)
+
+
+
+
+ans2 = pd.DataFrame(movie_count_dict.items(), columns=['Name', 'Total Movie Appearances']).sort_values(['Total Movie Appearances'], ascending=[False])
+
+
+print(ans2)
 
 
 
 
 
+#================================
+
+
+
+# Que 3. Marvel is not popular than DC Comics
+
+
+# To answer this question, I have to perform several analysis.
+# a. I will group the top 5 movies from Marvel and DC and check publishing house earned more.
+# b. I will group all the movies from respective publishing house and
+#    then check the total amount earned by both the publishing houses.
+
+
+que3 = earnings_df.sort_values(['Publisher', 'Gross Income'], ascending=[True, False])
+
+ans3a = que3.groupby('Publisher').head(5).reset_index(drop=True, inplace=False)
+ans3a = ans3a.groupby('Publisher')['Gross Income'].sum()
+
+
+
+ans3b = que3.groupby('Publisher')['Gross Income'].sum()
 
 
 
 
+print("\n\nSum of earnings from top five movies of both the publishing house:\n", ans3a)
+
+print("\n\nSum of earnings from all movies of both the publishing house:\n", ans3b)
 
 
 
+#==================================================
+
+# Que 4. Are non-human superheros not more popular as compared to mutant superheros.
+
+
+# a. I will find the count of number of human and mutant superheros for both the publishers.
+# b. I will find the count of number of human and mutant superheros no matter who was their publisher.
+
+
+ans4a = final_merged_df.groupby('Race').size()
+
+ans4b = final_merged_df.groupby(['Publisher', 'Race']).size()
 
 
 
+print('\n\nTotal number of Humans and Mutants in the final dataframe:\n',ans4a)
+
+print('\n\nTotal number of Humans and Mutants in different publishing house:\n',ans4b)
 
 
 
+#==================================================
 
 
+# Que 5. Finding the statistics of characters with different hair color, eye color, height and weight:
 
+
+ans5 = comics_df.groupby(['Publisher', 'Eye Color','Hair Color']).size()
+
+
+print(ans5)
 
 
 
