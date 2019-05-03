@@ -14,7 +14,7 @@
 3. Tested proposed hypothesis
 4. Prior approval taken from instructor for project topic
 5. Modified code on the basis of constructive feedback received from peers on "Presentation Day"
-6. Included doctests and unit-tests with 90 % code coverage
+6. Included doctests and unit-tests with 96 % code coverage
 7. All nine functions includes docstrings
 8. Functions run with different input parameters without hard-coded vales (check def names_url() which generates output) for the function (def get_tree()) as it's input.
 9. Hypothesis testing & Conclusion mentioned in ( README.md )
