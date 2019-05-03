@@ -610,3 +610,8 @@ with open("Superhero Report.txt", 'w') as file:
         file=file)
 
 
+#==============================
+
+# Generating merged dataframe as csv for data visualization:
+
+final_merged_df.to_csv("final_merged_df.csv")

@@ -1,0 +1,196 @@
+,Superhero Name,Intelligence,Strength,Speed,Durability,Power,Combat,Total,Race,Height,Weight,Identity,Alignment,Eye Color,Hair Color,Gender,Alive,Appearances,Real Name,Publisher
+0,Abin Sur,50,90,53,64,84,65,406,Mutant,185.0,90.0,Public ,Good ,Blue ,,Male ,Deceased ,92.0,New Earth,DC Comics
+1,Abomination,63,80,53,90,55,95,436,Mutant,203.0,441.0,Secret ,Neutral ,Blue ,No ,Male ,Living ,1.0,Earth-616,Marvel Comics
+2,Adam Strange,1,1,1,1,0,1,5,Human,185.0,88.0,Public ,,Blue ,Blond ,Male ,Living ,177.0,New Earth,DC Comics
+3,Air-Walker,50,85,100,85,100,40,460,Mutant,188.0,108.0,,,Black ,No ,Male ,Living ,27.0,Earth-616,Marvel Comics
+4,Alan Scott,63,80,23,90,98,32,386,Mutant,180.0,90.0,Secret ,Good ,Blue ,Blond ,Male ,Deceased ,969.0,New Earth,DC Comics
+5,Alfred Pennyworth,63,10,17,10,7,55,162,Human,178.0,72.0,Public ,Good ,Blue ,Black ,Male ,Living ,930.0,New Earth,DC Comics
+6,Amazo,75,100,100,100,100,100,575,Mutant,257.0,173.0,Public ,Bad ,Red ,,Male ,Living ,71.0,New Earth,DC Comics
+7,Ammo,1,1,1,1,0,1,5,Human,188.0,101.0,,Bad ,Brown ,Black ,Male ,Living ,4.0,Earth-616,Marvel Comics
+8,Angel,63,13,46,64,17,42,245,Mutant,183.0,68.0,No Dual ,,Black ,Black ,Male ,Living ,4.0,Earth-616,Marvel Comics
+9,Annihilus,75,80,47,56,59,64,381,Mutant,180.0,90.0,No Dual ,Neutral ,Green ,No ,Male ,Living ,125.0,Earth-616,Marvel Comics
+10,Anti-Venom,75,60,65,90,85,84,459,Mutant,229.0,358.0,,Good ,Red ,No ,Agender ,Deceased ,19.0,Earth-616,Marvel Comics
+11,Apocalypse,100,100,33,100,100,60,493,Mutant,213.0,135.0,Secret ,Bad ,,,,Deceased ,2.0,Earth-616,Marvel Comics
+12,Aquaman,63,80,50,80,65,80,418,Mutant,185.0,146.0,Public ,Good ,Blue ,Blond ,Male ,Living ,1121.0,Arthur Curry,DC Comics
+13,Arachne,1,1,1,1,0,1,5,Human,175.0,63.0,No Dual ,Bad ,,Black ,Female ,Living ,4.0,Earth-616,Marvel Comics
+14,Ares,75,82,35,80,62,101,435,Mutant,185.0,270.0,Public ,Bad ,Red ,Blond ,Male ,Living ,127.0,New Earth,DC Comics
+15,Ariel,50,10,12,14,72,28,186,Mutant,165.0,59.0,No Dual ,Good ,Black ,Pink ,Female ,Living ,21.0,Earth-616,Marvel Comics
+16,Arsenal,1,1,1,1,0,1,5,Human,-99.0,-99.0,,Bad ,,,Male ,Living ,1.0,Earth-One,DC Comics
+17,Atlas,50,80,23,99,69,42,363,Mutant,183.0,101.0,Secret ,Bad ,Blue ,Brown ,Male ,Living ,16.0,New Earth,DC Comics
+18,Aurora,50,15,83,56,69,56,329,Mutant,180.0,63.0,,Bad ,Blue ,Black ,Female ,Living ,1.0,Earth-One,DC Comics
+19,Azazel,50,11,47,95,87,80,370,Mutant,183.0,67.0,Secret ,Bad ,Red ,Grey ,Male ,Living ,16.0,Earth-616,Marvel Comics
+20,Azrael,63,18,17,20,35,80,233,Human,-99.0,-99.0,Public ,Neutral ,Gold ,Black ,Male ,Living ,37.0,New Earth,DC Comics
+21,Aztar,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,,White ,,Male ,Living ,436.0,New Earth,DC Comics
+22,Bane,88,53,23,56,51,95,366,Human,203.0,180.0,Secret ,Bad ,Brown ,Brown ,Male ,Living ,157.0,New Earth,DC Comics
+23,Banshee,50,10,58,42,60,70,290,Human,183.0,77.0,Secret ,Neutral ,Yellow ,Black ,Male ,Living ,3.0,Earth-616,Marvel Comics
+24,Batman,100,18,27,42,37,100,324,Human,188.0,95.0,Secret ,Good ,Blue ,Black ,Male ,Living ,3093.0,Bruce Wayne,DC Comics
+25,Beak,1,1,1,1,0,1,5,Mutant,175.0,63.0,Secret ,Bad ,,Brown ,Male ,Living ,1.0,Earth-616,Marvel Comics
+26,Beast,88,48,35,56,35,84,346,Mutant,180.0,181.0,,Good ,,Black ,Male ,Deceased ,1.0,New Earth,DC Comics
+27,Beta Ray Bill,63,80,35,95,100,84,457,Mutant,201.0,216.0,No Dual ,Good ,White ,No ,Male ,Living ,153.0,Earth-616,Marvel Comics
+28,Beyonder,88,100,23,100,100,56,467,Mutant,-99.0,-99.0,Secret ,Neutral ,Variable ,Variable ,Male ,Living ,81.0,Earth-616,Marvel Comics
+29,Big Barda,63,90,23,85,42,72,375,Mutant,188.0,135.0,Secret ,Good ,Blue ,Black ,Female ,Deceased ,216.0,New Earth,DC Comics
+30,Bird-Brain,25,10,35,28,21,42,161,Mutant,-99.0,-99.0,No Dual ,Good ,Red ,No ,Male ,Living ,15.0,Earth-616,Marvel Comics
+31,Bird-Man,1,1,1,1,0,1,5,Human,-99.0,-99.0,Secret ,Bad ,,,,Living ,1.0,Earth-616,Marvel Comics
+32,Bizarro,75,95,100,100,95,85,550,Mutant,191.0,155.0,Public ,Neutral ,Black ,Black ,Male ,Living ,96.0,New Earth,DC Comics
+33,Black Abbott,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,Bad ,,,Male ,Living ,7.0,Earth-616,Marvel Comics
+34,Black Mamba,75,10,35,42,78,65,305,Mutant,170.0,52.0,Secret ,Bad ,,Brown ,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+35,Black Widow,75,13,27,32,32,100,279,Human,170.0,59.0,Secret ,Neutral ,,Brown ,Female ,Deceased ,2.0,Earth-616,Marvel Comics
+36,Blackout,63,32,45,80,38,65,323,Mutant,191.0,104.0,Secret ,Bad ,Red ,White ,Male ,Living ,56.0,Earth-616,Marvel Comics
+37,Blackwing,38,10,35,32,20,56,191,Mutant,185.0,86.0,,Bad ,,,Female ,Living ,4.0,Earth-616,Marvel Comics
+38,Blackwulf,50,28,8,30,59,25,200,Mutant,188.0,88.0,Secret ,Neutral ,Red ,White ,Male ,Living ,15.0,Earth-616,Marvel Comics
+39,Blade,63,28,38,50,33,90,302,Mutant,188.0,97.0,,Bad ,,,Male ,Living ,2.0,New Earth,DC Comics
+40,Blizzard,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,Bad ,,,Male ,Living ,7.0,New Earth,DC Comics
+41,Bloodhawk,50,10,50,80,66,64,320,Mutant,-99.0,-99.0,Secret ,Good ,Black ,No ,Male ,Deceased ,2.0,Earth-616,Marvel Comics
+42,Boomer,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Public ,Good ,,No ,Male ,Living ,1.0,Earth-616,Marvel Comics
+43,Bullseye,50,11,25,70,20,70,246,Human,183.0,90.0,Secret ,Bad ,Blue ,Blond ,Male ,Living ,277.0,Earth-616,Marvel Comics
+44,Callisto,63,53,23,42,45,85,311,Mutant,175.0,74.0,,,,Blond ,Female ,Living ,2.0,New Earth,DC Comics
+45,Captain America,63,19,35,56,46,100,319,Human,188.0,108.0,Public ,Good ,Blue ,White ,Male ,Living ,3360.0,Steven Rogers,Marvel Comics
+46,Captain Universe,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,Good ,Variable ,Variable ,Agender ,Living ,54.0,Earth-616,Marvel Comics
+47,Carnage,63,63,70,84,81,90,451,Mutant,185.0,86.0,Public ,Bad ,White ,No ,Agender ,Living ,61.0,Earth-616,Marvel Comics
+48,Catwoman,63,13,33,28,24,85,246,Human,175.0,61.0,Secret ,Neutral ,Green ,Black ,Female ,Living ,,Selina Kyle,DC Comics
+49,Cecilia Reyes,1,1,1,1,0,1,5,Mutant,170.0,62.0,No Dual ,Good ,Brown ,Brown ,Female ,Living ,74.0,Earth-616,Marvel Comics
+50,Century,88,80,53,64,74,100,459,Mutant,201.0,97.0,Secret ,Good ,White ,White ,Male ,Living ,41.0,Earth-616,Marvel Comics
+51,Chameleon,88,10,12,28,28,28,194,Mutant,-99.0,-99.0,Secret ,Neutral ,Green ,Bald,Male ,Deceased ,2.0,Earth-616,Marvel Comics
+52,Changeling,63,10,23,42,64,64,266,Mutant,180.0,81.0,Secret ,Good ,Brown ,Black ,Male ,Deceased ,36.0,Earth-616,Marvel Comics
+53,Clea,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,No Dual ,Good ,Blue ,White ,Female ,Living ,247.0,Earth-616,Marvel Comics
+54,Colossus,63,83,33,100,46,80,405,Mutant,226.0,225.0,Secret ,Bad ,Brown ,Brown ,Male ,Living ,4.0,Earth-616,Marvel Comics
+55,Corsair,1,1,1,1,0,1,5,Mutant,191.0,79.0,Secret ,Bad ,,Black ,Male ,Living ,1.0,Earth-616,Marvel Comics
+56,Cyborg,75,53,42,85,72,64,391,Mutant,198.0,173.0,,Bad ,,,Male ,Living ,1.0,Earth-616,Marvel Comics
+57,Cyclops,75,10,23,42,76,80,306,Mutant,191.0,88.0,Secret ,Neutral ,,Black ,Male ,Living ,5.0,Earth-616,Marvel Comics
+58,Dagger,63,10,35,42,52,70,272,Mutant,165.0,52.0,Secret ,Bad ,,White ,Male ,Living ,1.0,Earth-616,Marvel Comics
+59,Darkstar,38,8,35,42,52,64,239,Mutant,168.0,56.0,,Bad ,,,,Living ,2.0,New Earth,DC Comics
+60,Deadpool,50,15,30,100,100,100,395,Mutant,188.0,95.0,Secret ,Neutral ,Brown ,Bald,Male ,Living ,500.0,Wade Wilson,Marvel Comics
+61,Deathlok,69,32,30,70,40,60,301,Mutant,193.0,178.0,,Neutral ,,,,Deceased ,8.0,Earth-616,Marvel Comics
+62,Demogoblin,50,48,42,35,54,60,289,Mutant,185.0,95.0,Secret ,Neutral ,Red ,No ,Male ,Deceased ,40.0,Earth-616,Marvel Comics
+63,Donna Troy,1,1,1,1,0,1,5,Mutant,175.0,63.0,Public ,Good ,Blue ,Black ,Female ,Living ,,New Earth,DC Comics
+64,Doomsday,88,80,67,120,100,90,545,Mutant,244.0,412.0,Public ,Bad ,Red ,White ,Male ,Living ,,New Earth,DC Comics
+65,Dormammu,88,95,83,100,100,80,546,Mutant,185.0,-99.0,No Dual ,Bad ,Yellow ,No ,Male ,Living ,132.0,Earth-616,Marvel Comics
+66,Ego,88,80,83,99,71,28,449,Mutant,-99.0,-99.0,No Dual ,,,No ,Male ,Living ,53.0,Earth-616,Marvel Comics
+67,Electro,69,10,50,56,67,64,316,Human,180.0,74.0,,Good ,,No ,,Living ,31.0,Earth-616,Marvel Comics
+68,Emma Frost,75,63,35,90,82,42,387,Mutant,178.0,65.0,Public ,Neutral ,Blue ,Brown ,Female ,Living ,880.0,Earth-616,Marvel Comics
+69,Fabian Cortez,1,1,1,1,0,1,5,Mutant,196.0,96.0,Public ,Bad ,Blue ,Brown ,Male ,Deceased ,49.0,Earth-616,Marvel Comics
+70,Faora,88,95,75,100,87,90,535,Mutant,-99.0,-99.0,Secret ,Bad ,Brown ,Brown ,Female ,Living ,15.0,New Earth,DC Comics
+71,Fin Fang Foom,50,81,23,100,68,70,392,Mutant,975.0,18.0,Secret ,Bad ,Red ,No ,Male ,Living ,69.0,Earth-616,Marvel Comics
+72,Forge,63,10,12,28,12,48,173,Mutant,183.0,81.0,Public ,Good ,Brown ,Black ,Male ,Living ,276.0,Earth-616,Marvel Comics
+73,Franklin Richards,1,1,1,1,0,1,5,Mutant,142.0,45.0,No Dual ,Good ,Blue ,Blond ,Male ,Living ,473.0,Earth-616,Marvel Comics
+74,Franklin Storm,38,10,1,1,0,10,60,Mutant,188.0,92.0,No Dual ,Good ,Blue ,Grey ,Male ,Deceased ,5.0,Earth-616,Marvel Comics
+75,Frigga,1,1,1,1,0,1,5,Mutant,180.0,167.0,Secret ,Good ,Blue ,White ,Female ,Living ,106.0,Earth-616,Marvel Comics
+76,Galactus,100,100,83,100,100,70,553,Mutant,876.0,16.0,Secret ,Neutral ,Brown ,No ,Male ,Living ,390.0,Earth-616,Marvel Comics
+77,Garbage Man,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,,,Black ,Male ,Living ,1.0,Earth-616,Marvel Comics
+78,Ghost Rider,50,55,25,100,70,60,360,Mutant,188.0,99.0,Secret ,Good ,,,,Living ,2.0,Earth-616,Marvel Comics
+79,Gog,50,34,47,72,39,56,298,Mutant,-99.0,-99.0,Secret ,Bad ,Yellow ,Blond ,Male ,Living ,17.0,Earth-616,Marvel Comics
+80,Goliath,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,,Bad ,White ,Brown ,Male ,Living ,5.0,New Earth,DC Comics
+81,Granny Goodness,1,1,1,1,0,1,5,Mutant,178.0,115.0,Public ,Bad ,Blue ,White ,Female ,Deceased ,115.0,New Earth,DC Comics
+82,Green Arrow,75,12,35,28,26,90,266,Human,188.0,88.0,Secret ,Good ,Green ,Blond ,Male ,Living ,1.0,Oliver Queen,DC Comics
+83,Green Goblin,75,48,35,48,38,28,272,Human,180.0,83.0,Secret ,Bad ,Yellow ,No ,Male ,Deceased ,16.0,Earth-616,Marvel Comics
+84,Groot,75,85,33,70,92,64,419,Mutant,701.0,4.0,No Dual ,Good ,Black ,No ,Male ,Living ,92.0,Earth-616,Marvel Comics
+85,Guardian,1,1,1,1,0,1,5,Human,-99.0,-99.0,Secret ,Good ,,,,Living ,5.0,Earth-616,Marvel Comics
+86,Guy Gardner,38,80,27,64,97,64,370,Mutant,188.0,95.0,Public ,Good ,Blue ,Red ,Male ,Living ,593.0,New Earth,DC Comics
+87,Hal Jordan,63,90,53,64,100,56,426,Human,188.0,90.0,Public ,Good ,,Brown ,Male ,Living ,1.0,Earth-616,Marvel Comics
+88,Havok,63,10,25,60,71,45,274,Mutant,183.0,79.0,,Bad ,,,Male ,Living ,,Earth-616,Marvel Comics
+89,Hawk,38,38,35,95,36,42,284,Mutant,185.0,89.0,Secret ,Bad ,,Bald,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+90,Hercules,63,100,46,85,67,100,461,Mutant,196.0,146.0,,Neutral ,,Black ,Male ,Living ,11.0,New Earth,DC Comics
+91,Hobgoblin,1,1,1,1,0,1,5,Mutant,180.0,83.0,Secret ,Neutral ,Yellow ,No ,Male ,Deceased ,19.0,Earth-616,Marvel Comics
+92,Hollow,1,1,1,1,0,1,5,Mutant,170.0,-99.0,Secret ,Bad ,Brown ,Bald,Male ,Deceased ,3.0,Earth-616,Marvel Comics
+93,Hope Summers,63,10,12,32,89,75,281,Mutant,168.0,48.0,Secret ,Good ,Green ,Red ,Female ,Living ,200.0,Earth-616,Marvel Comics
+94,Hulk,88,100,47,100,41,85,461,Mutant,244.0,630.0,Public ,Good ,Brown ,Brown ,Male ,Living ,2017.0,Robert Bruce Banner,Marvel Comics
+95,Human Torch,56,10,63,70,74,42,315,Mutant,178.0,77.0,Public ,Good ,Blue ,Blond ,Male ,Living ,548.0,Earth-616,Marvel Comics
+96,Huntress,69,10,23,28,34,95,259,Mutant,180.0,59.0,,Bad ,Blue ,Brown ,Female ,Living ,1.0,New Earth,DC Comics
+97,Hydro-Man,38,13,25,80,66,50,272,Mutant,188.0,119.0,Secret ,Bad ,,Brown ,Male ,Living ,1.0,Earth-616,Marvel Comics
+98,Hyperion,63,95,75,95,58,72,458,Mutant,183.0,207.0,Public ,Neutral ,,,Male ,Living ,17.0,New Earth,DC Comics
+99,Iceman,63,32,53,100,100,64,412,Mutant,173.0,65.0,Secret ,Neutral ,,Blond ,Male ,Living ,5.0,Earth-616,Marvel Comics
+100,Impulse,50,10,100,60,63,60,343,Human,170.0,65.0,Secret ,Bad ,,,Male ,Living ,1.0,New Earth,DC Comics
+101,Iron Man,100,85,58,85,100,64,492,Human,198.0,191.0,Public ,Good ,Blue ,Black ,Male ,Living ,2961.0,"Anthony \""Tony\"" Stark",Marvel Comics
+102,Isis,75,48,75,46,43,56,343,Mutant,-99.0,-99.0,Secret ,Neutral ,,,Female ,Living ,10.0,Earth-616,Marvel Comics
+103,Jean Grey,100,80,67,100,100,70,517,Mutant,168.0,52.0,Public ,Good ,Green ,Red ,Female ,Deceased ,1107.0,Earth-616,Marvel Comics
+104,Jennifer Kale,75,10,35,42,61,72,295,Mutant,168.0,55.0,Secret ,Good ,Blue ,Blond ,Female ,Deceased ,65.0,Earth-616,Marvel Comics
+105,John Stewart,50,80,27,64,94,54,369,Human,185.0,90.0,Public ,Good ,Brown ,Black ,Male ,Living ,549.0,New Earth,DC Comics
+106,John Wraith,75,12,35,28,65,80,295,Mutant,183.0,88.0,No Dual ,Neutral ,Brown ,Bald,Male ,Deceased ,18.0,Earth-616,Marvel Comics
+107,Joker,100,10,12,56,22,90,290,Human,196.0,86.0,Secret ,Bad ,Green ,Green ,Male ,Living ,517.0,New Earth,DC Comics
+108,Jubilee,56,8,22,20,66,90,262,Mutant,165.0,52.0,,Good ,,,Female ,Living ,4.0,Earth-616,Marvel Comics
+109,Juggernaut,44,100,42,100,74,70,430,Human,287.0,855.0,Secret ,Bad ,,Bald,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+110,Justice,50,10,33,70,55,30,248,Human,178.0,81.0,Public ,Good ,,White ,,Living ,5.0,Earth-616,Marvel Comics
+111,Kilowog,81,90,53,42,100,80,446,Mutant,234.0,324.0,Public ,Good ,Red ,,Male ,Living ,299.0,New Earth,DC Comics
+112,Klaw,63,38,33,100,62,60,356,Human,188.0,97.0,Public ,Bad ,Brown ,Black ,Male ,Deceased ,,Earth-616,Marvel Comics
+113,Krypto,9,80,100,90,72,40,391,Mutant,64.0,18.0,Secret ,Good ,Blue ,White ,Male ,Living ,109.0,New Earth,DC Comics
+114,Leech,25,5,12,14,62,14,132,Mutant,-99.0,-99.0,Secret ,Good ,White ,No ,Male ,Living ,152.0,Earth-616,Marvel Comics
+115,Lightning Lord,44,10,23,42,66,42,227,Mutant,191.0,95.0,,Bad ,,,Male ,Living ,1.0,Earth-616,Marvel Comics
+116,Living Brain,75,53,35,56,31,28,278,Mutant,198.0,360.0,,Neutral ,Yellow ,No ,Agender ,Living ,32.0,Earth-616,Marvel Comics
+117,Lizard,38,51,27,70,40,56,282,Human,203.0,230.0,,Bad ,,No ,Male ,Living ,10.0,Earth-616,Marvel Comics
+118,Lobo,88,83,35,100,95,85,486,Mutant,229.0,288.0,Public ,Neutral ,Red ,Black ,Male ,Living ,353.0,New Earth,DC Comics
+119,Loki,88,57,47,85,85,56,418,Mutant,193.0,236.0,,Bad ,Green ,Brown ,Male ,Living ,13.0,New Earth,DC Comics
+120,Luke Cage,44,55,23,95,35,64,316,Human,198.0,191.0,No Dual ,Good ,Brown ,Black ,Male ,Living ,856.0,Earth-616,Marvel Comics
+121,Lyja,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Secret ,Neutral ,Green ,Green ,Female ,Living ,120.0,Earth-616,Marvel Comics
+122,Magus,88,100,70,99,100,74,531,Mutant,183.0,-99.0,,Bad ,,,Male ,Living ,15.0,Earth-616,Marvel Comics
+123,Man-Thing,50,32,8,100,98,40,328,Mutant,213.0,225.0,Secret ,Neutral ,Red ,No ,,Living ,1.0,Earth-616,Marvel Comics
+124,Mandarin,100,28,23,28,99,95,373,Human,188.0,97.0,Secret ,Bad ,Blue ,Black ,Male ,Deceased ,190.0,Earth-616,Marvel Comics
+125,Marvel Girl,63,85,47,42,100,80,417,Mutant,170.0,56.0,Secret ,Neutral ,Blue ,Red ,Female ,Living ,5.0,Earth-616,Marvel Comics
+126,Maxima,75,90,35,56,67,75,398,Mutant,180.0,72.0,Public ,Good ,Brown ,Red ,Female ,Deceased ,124.0,New Earth,DC Comics
+127,Medusa,75,34,35,70,35,56,305,Mutant,180.0,59.0,Public ,Bad ,,,Female ,Living ,23.0,New Earth,DC Comics
+128,Meltdown,38,10,12,42,58,64,224,Mutant,165.0,54.0,Secret ,Bad ,,,Male ,Deceased ,7.0,Earth-616,Marvel Comics
+129,Mephisto,88,85,35,95,100,42,445,Mutant,198.0,140.0,No Dual ,Bad ,White ,Black ,Male ,Living ,316.0,Earth-616,Marvel Comics
+130,Mera,56,62,54,70,55,70,367,Mutant,175.0,72.0,Public ,,Blue ,Red ,Female ,Living ,226.0,New Earth,DC Comics
+131,Metron,88,10,47,56,69,28,298,Mutant,185.0,86.0,Secret ,Neutral ,Blue ,Black ,Male ,Deceased ,161.0,New Earth,DC Comics
+132,Mimic,63,67,47,56,79,42,354,Mutant,188.0,101.0,Secret ,Bad ,,,Male ,Living ,3.0,New Earth,DC Comics
+133,Misfit,63,32,23,80,62,42,302,Mutant,-99.0,-99.0,Secret ,Bad ,,,Male ,Living ,3.0,New Earth,DC Comics
+134,Mister Mxyzptlk,113,10,12,14,100,28,277,Mutant,-99.0,-99.0,Secret ,Neutral ,Black ,White ,Male ,Living ,64.0,New Earth,DC Comics
+135,Mogo,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,Public ,Good ,,,Male ,Living ,72.0,New Earth,DC Comics
+136,Moloch,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,,Bad ,,,,Living ,1.0,Earth-616,Marvel Comics
+137,Morlun,63,60,35,42,59,56,315,Mutant,188.0,79.0,No Dual ,Bad ,Red ,Black ,Male ,Living ,32.0,Earth-616,Marvel Comics
+138,Morph,1,1,1,1,0,1,5,Mutant,178.0,79.0,Secret ,Good ,,No ,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+139,Moses Magnum,75,28,12,42,55,56,268,Mutant,175.0,72.0,Public ,Bad ,Brown ,Black ,Male ,Living ,26.0,Earth-616,Marvel Comics
+140,Nightwing,88,11,33,28,36,100,296,Human,178.0,79.0,Secret ,,Blue ,,Male ,Living ,,New Earth,DC Comics
+141,Omega Red,1,1,1,1,0,1,5,Mutant,211.0,191.0,Secret ,Bad ,,Black ,Male ,Deceased ,6.0,Earth-616,Marvel Comics
+142,Onslaught,88,85,47,100,100,85,505,Mutant,305.0,405.0,Secret ,Bad ,Red ,No ,Male ,Living ,60.0,Earth-616,Marvel Comics
+143,Osiris,75,85,60,95,65,42,422,Mutant,-99.0,-99.0,,Good ,,,Male ,Living ,8.0,New Earth,DC Comics
+144,Phoenix,100,80,67,100,100,70,517,Mutant,168.0,52.0,Secret ,Bad ,Green ,Red ,Female ,Living ,1.0,Earth-616,Marvel Comics
+145,Power Man,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,,Bad ,,,Male ,Deceased ,6.0,Earth-616,Marvel Comics
+146,Punisher,50,16,23,28,22,100,239,Human,183.0,90.0,,Bad ,,,,Deceased ,13.0,Earth-616,Marvel Comics
+147,Pyro,38,10,12,14,50,28,152,Mutant,178.0,68.0,Secret ,Bad ,,,Male ,Living ,1.0,New Earth,DC Comics
+148,Quill,38,10,12,14,23,14,111,Mutant,163.0,56.0,Secret ,,Brown ,No ,Male ,Living ,13.0,Earth-616,Marvel Comics
+149,Red Hulk,50,88,47,95,59,75,414,Mutant,213.0,630.0,Public ,Neutral ,Blue ,Black ,Male ,Living ,415.0,Thaddeus Ross,Marvel Comics
+150,Red Skull,75,10,12,14,19,80,210,Mutant,188.0,108.0,Secret ,Bad ,,,Male ,Deceased ,2.0,Earth-616,Marvel Comics
+151,Red Tornado,75,38,67,60,92,40,372,Mutant,185.0,146.0,Secret ,Good ,Green ,,Male ,Living ,374.0,New Earth,DC Comics
+152,Rhino,25,80,43,90,37,85,360,Mutant,196.0,320.0,Secret ,Bad ,Brown ,Brown ,Male ,Deceased ,,Earth-616,Marvel Comics
+153,Rocket Raccoon,50,5,23,28,28,64,198,Mutant,122.0,25.0,No Dual ,Good ,Brown ,Black ,Male ,Living ,120.0,Earth-616,Marvel Comics
+154,Rogue,75,10,12,28,80,80,285,Mutant,173.0,54.0,Secret ,Good ,Green ,Auburn ,Female ,Living ,850.0,Earth-616,Marvel Comics
+155,Sabretooth,55,53,25,90,28,100,351,Mutant,198.0,171.0,Secret ,Bad ,Amber ,Blond ,Male ,Living ,382.0,Victor Creed,Marvel Comics
+156,Sage,75,10,12,14,28,56,195,Mutant,170.0,61.0,Secret ,Good ,Blue ,Black ,Female ,Living ,172.0,Earth-616,Marvel Comics
+157,Sandman,50,75,47,97,62,56,387,Human,185.0,203.0,Secret ,Bad ,,,Male ,Living ,2.0,Earth-616,Marvel Comics
+158,Sasquatch,75,80,23,56,15,42,291,Mutant,305.0,900.0,Secret ,,,,Male ,Deceased ,13.0,Earth-616,Marvel Comics
+159,Scarecrow,81,10,12,14,48,50,215,Human,183.0,63.0,Secret ,Bad ,,Black ,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+160,Scarlet Spider,75,53,60,74,39,56,357,Human,178.0,74.0,Secret ,Neutral ,,,Male ,Deceased ,3.0,Earth-616,Marvel Comics
+161,Shadow King,75,12,27,100,100,75,389,Mutant,185.0,149.0,,Bad ,Red ,No ,Male ,Living ,67.0,Earth-616,Marvel Comics
+162,Shang-Chi,63,12,30,50,25,100,280,Human,178.0,79.0,No Dual ,Good ,Brown ,Black ,Male ,Living ,296.0,Earth-616,Marvel Comics
+163,Sif,50,57,25,52,19,70,273,Mutant,188.0,191.0,,Good ,Blue ,Blond ,Female ,Living ,1.0,New Earth,DC Comics
+164,Siren,38,10,12,14,55,28,157,Mutant,175.0,72.0,Secret ,Bad ,Black ,Blond ,Female ,Living ,8.0,New Earth,DC Comics
+165,Skaar,50,85,27,90,62,85,399,Mutant,198.0,180.0,No Dual ,Good ,Green ,Black ,Male ,Living ,92.0,Earth-616,Marvel Comics
+166,Spider-Man,88,55,60,74,58,85,420,Human,178.0,74.0,Secret ,Good ,Hazel ,Brown ,Male ,Living ,4043.0,Peter Parker,Marvel Comics
+167,Starfire,50,80,33,85,59,70,377,Mutant,193.0,71.0,Public ,Good ,Blue ,Black ,Female ,Living ,15.0,New Earth,DC Comics
+168,Steel,81,82,53,90,64,64,434,Mutant,201.0,131.0,Public ,Good ,,White ,Male ,Living ,134.0,Earth-616,Marvel Comics
+169,Storm,75,10,47,30,88,75,325,Mutant,180.0,57.0,,,,,,Living ,14.0,New Earth,DC Comics
+170,Sunspot,63,63,35,25,79,70,335,Mutant,173.0,77.0,Secret ,Bad ,Black ,Brown ,Male ,Living ,1.0,New Earth,DC Comics
+171,Superman,100,100,100,100,94,85,579,Mutant,191.0,101.0,Secret ,Good ,Blue ,Black ,Male ,Living ,2496.0,Clark Kent,DC Comics
+172,Swamp Thing,88,80,23,100,66,56,413,Mutant,-99.0,-99.0,Public ,Good ,Red ,,Male ,Living ,309.0,New Earth,DC Comics
+173,Thanos,88,100,17,100,100,80,485,Mutant,201.0,443.0,No Dual ,Bad ,Red ,No ,Male ,Living ,306.0,Earth-616,Marvel Comics
+174,Thing,75,84,21,90,26,80,376,Mutant,183.0,225.0,Secret ,Neutral ,,No ,,Living ,1.0,Earth-616,Marvel Comics
+175,Thor,69,100,92,100,100,85,546,Mutant,198.0,288.0,,Good ,Blue ,Red ,Male ,Living ,14.0,New Earth,DC Comics
+176,Thunderbird,50,32,27,32,14,70,225,Mutant,185.0,101.0,Secret ,Neutral ,Yellow ,Black ,Male ,Living ,3.0,Earth-616,Marvel Comics
+177,Tiger Shark,38,72,42,70,21,28,271,Human,185.0,203.0,Secret ,Bad ,,,Male ,Living ,2.0,New Earth,DC Comics
+178,Tigra,63,32,53,38,33,90,309,Mutant,178.0,81.0,Public ,Neutral ,Black ,Red ,Female ,Deceased ,11.0,New Earth,DC Comics
+179,Tinkerer,100,10,23,14,10,14,171,Mutant,163.0,54.0,Secret ,Bad ,Black ,Bald,Male ,Living ,,Earth-616,Marvel Comics
+180,Toxin,56,73,70,84,75,70,428,Mutant,188.0,97.0,,Neutral ,Variable ,No ,Agender ,Living ,25.0,Earth-616,Marvel Comics
+181,Ultron,88,83,42,100,100,64,477,Mutant,206.0,331.0,No Dual ,Bad ,Red ,No ,Male ,Deceased ,181.0,Earth-616,Marvel Comics
+182,Utgard-Loki,50,80,23,84,72,64,373,Mutant,15.2,58.0,Secret ,Bad ,Blue ,White ,Male ,Living ,9.0,Earth-616,Marvel Comics
+183,Valkyrie,1,1,1,1,0,1,5,Mutant,191.0,214.0,,Bad ,,Black ,Female ,Living ,1.0,Earth-616,Marvel Comics
+184,Vanisher,63,10,75,56,39,42,285,Mutant,165.0,79.0,Secret ,Neutral ,Green ,Bald,Male ,Living ,89.0,Earth-616,Marvel Comics
+185,Venom,75,57,65,84,79,84,444,Mutant,191.0,117.0,Known to Authorities ,Neutral ,Variable ,No ,Agender ,Living ,348.0,Earth-616,Marvel Comics
+186,Vision,100,72,54,95,76,70,467,Mutant,191.0,135.0,Secret ,Good ,Gold ,No ,Male ,Living ,1007.0,Earth-616,Marvel Comics
+187,Vulcan,1,1,1,1,0,1,5,Mutant,-99.0,-99.0,,Good ,,,Male ,Living ,6.0,New Earth,DC Comics
+188,Vulture,63,22,47,56,40,56,284,Human,180.0,79.0,Secret ,Bad ,,Black ,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+189,Warlock,88,36,79,95,71,95,464,Mutant,188.0,108.0,Secret ,Good ,Black ,No ,Male ,Living ,261.0,Earth-616,Marvel Comics
+190,Wolverine,55,32,38,100,44,100,369,Mutant,160.0,135.0,Public ,Neutral ,Blue ,Black ,Male ,Living ,3061.0,"James \""Logan\"" Howlett",Marvel Comics
+191,Wonder Woman,88,100,50,100,42,100,480,Mutant,183.0,74.0,Public ,Good ,Blue ,Black ,Female ,Living ,1231.0,Diana Prince,DC Comics
+192,Wyatt Wingfoot,10,10,12,1,1,56,90,Mutant,196.0,117.0,Public ,Good ,Brown ,Black ,Male ,Living ,119.0,Earth-616,Marvel Comics
+193,Yellow Claw,1,1,1,1,0,1,5,Mutant,188.0,95.0,Secret ,Bad ,,Black ,Male ,Deceased ,1.0,Earth-616,Marvel Comics
+194,Ymir,50,100,27,100,83,28,388,Mutant,304.8,-99.0,No Dual ,Bad ,White ,No ,Male ,Living ,30.0,Earth-616,Marvel Comics
