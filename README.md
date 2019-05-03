@@ -125,8 +125,8 @@ Que 4. Find the statistics of characters with different hair color, eye color, h
 | Publisher  | Eye Color   | Hair Color  |Count|
 |:---------------:|:-----------:|:------------:|:-----:|
 |   Marvel Comics        |  Brown  |       Black |775|
-|Superman         |  Brown  |      Brown  |621|
-|  Wonder Woman   |  Blue  |       Blond |599|
+|         |  Brown  |      Brown  |621|
+|     |  Blue  |       Blond |599|
 |  DC Comics        |  Brown  |       Black |429|
 |   Marvel Comics     |  Blue  |  Black      |361|
 
