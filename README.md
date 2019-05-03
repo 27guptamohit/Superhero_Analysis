@@ -196,6 +196,8 @@ Que 7. How are height and weight distributed for characters in different publish
 
 ![Height & Weight Relation for Publishers](https://github.com/27guptamohit/Superhero_Analysis/blob/master/Data%20Files/hw.png)
 
+![Height Distribution](https://github.com/27guptamohit/Superhero_Analysis/blob/master/Data%20Files/hwcomp.png)
+
 Que 8. How many movie appearances does the characters with most comic appearances have?
 
 |  Superhero Name |Total Movie Appearances   |
