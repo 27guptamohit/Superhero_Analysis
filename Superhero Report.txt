@@ -47,7 +47,7 @@ b. Selecting first and last ranked character to form pair
 
  Publisher
 DC Comics        2061358541
-Marvel Comics    2673994705
+Marvel Comics    2699246696
 Name: Gross Income, dtype: int64
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ Name: Gross Income, dtype: int64
 
  Publisher
 DC Comics         3357798524
-Marvel Comics    10096393849
+Marvel Comics    10121645840
 Name: Gross Income, dtype: int64
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -118,19 +118,17 @@ dtype: int64
 
 10. Median of physical attributes of superheros on the basis of their Race:
 
-                       Intelligence  Strength  Speed  ...  Power  Combat  Total
-Publisher     Race                                   ...                      
-DC Comics     Human           63.0      12.0   27.0  ...   26.0    80.0  271.0
-              Mutant          63.0      62.5   35.0  ...   65.0    67.5  365.0
-Marvel Comics Human           63.0      19.0   33.0  ...   40.0    60.0  284.0
-              Mutant          63.0      28.0   27.0  ...   59.0    60.0  298.0
-
-[4 rows x 7 columns]
+                       Intelligence  Strength  Speed  Durability  Power  Combat  Total
+Publisher     Race                                                                   
+DC Comics     Human           63.0      12.0   27.0        28.0   26.0    80.0  271.0
+              Mutant          63.0      62.5   35.0        62.0   65.0    67.5  365.0
+Marvel Comics Human           63.0      19.0   33.0        56.0   40.0    60.0  284.0
+              Mutant          63.0      28.0   27.0        56.0   59.0    60.0  298.0
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-11. Characters with most common Height(kgs) amongst different publishers and race:
+11. Characters with most common Height(cms) amongst different publishers and race:
 
  Publisher      Race  
 DC Comics      Human     185.0
