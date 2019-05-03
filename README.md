@@ -21,7 +21,7 @@
 10. Report from this program uploaded on Github (Superhero Report.txt)
 11. Total lines of code: 600+
 
-![90% Code Coverage Proof](coverage.png)
+![90% Code Coverage Proof](/Data Files/coverage.png)
 
 ======
 ## Introduction
